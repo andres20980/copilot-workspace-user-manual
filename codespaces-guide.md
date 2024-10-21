@@ -1,46 +1,46 @@
-# Codespaces Starter Guide
+# Guía de inicio de Codespaces
 
-This document contains useful information for using the terminal/Codespace in your Workspace session.
+Este documento contiene información útil para usar la terminal/Codespace en tu sesión de Workspace.
 
-## Codespaces Limits
+## Límites de Codespaces
 
-### Overall Usage
+### Uso general
 
-The technical preview includes limited free Codespaces compute usage that is reset at the start of the calendar month.
+La vista previa técnica incluye un uso limitado gratuito de la computación de Codespaces que se reinicia al comienzo del mes calendario.
 
-### Overall Limits
+### Límites generales
 
-The technical preview enforces a total Codespaces and total active Codespaces limits that you may encounter. If closing Workspace sessions does not resolve these issues you may reach out to us [here](https://github.com/githubnext/copilot-workspace-user-manual?tab=readme-ov-file#feedback).
+La vista previa técnica impone límites totales de Codespaces y límites totales de Codespaces activos que puedes encontrar. Si cerrar las sesiones de Workspace no resuelve estos problemas, puedes comunicarte con nosotros [aquí](https://github.com/githubnext/copilot-workspace-user-manual?tab=readme-ov-file#feedback).
 
-### Organization based limits and policies
-If the Organization that owns the repository has set policies for Codespaces usage they will be applied to being able to create Codespaces for Workspace. You should reach out to an administrator of the organization to adjust any policies.
+### Límites y políticas basados en la organización
+Si la organización que es dueña del repositorio ha establecido políticas para el uso de Codespaces, estas se aplicarán a la capacidad de crear Codespaces para Workspace. Debes comunicarte con un administrador de la organización para ajustar cualquier política.
 
-## Common Errors
+## Errores comunes
 
-#### You've reached your Copilot Workspace usage limit
+#### Has alcanzado el límite de uso de Copilot Workspace
 
-At the start of the next calendar month your free usage limit will reset and you can continue using Workspace. You may reach out to us and give us feedback about the usage limit [here](https://github.com/githubnext/copilot-workspace-user-manual?tab=readme-ov-file#feedback).
+Al comienzo del próximo mes calendario, tu límite de uso gratuito se reiniciará y podrás seguir usando Workspace. Puedes comunicarte con nosotros y darnos tu opinión sobre el límite de uso [aquí](https://github.com/githubnext/copilot-workspace-user-manual?tab=readme-ov-file#feedback).
 
-#### Limit of active Copilot Workspace reached.
+#### Se alcanzó el límite de Copilot Workspace activos.
 
-Remediate this by closing open Workspace sessions and allowing previous sessions to shutdown before creating new ones.
+Soluciona esto cerrando las sesiones abiertas de Workspace y permitiendo que las sesiones anteriores se apaguen antes de crear nuevas.
 
-#### Limit of Copilot Workspace reached.
-Remediate this by closing open Workspace sessions and allowing previous sessions to shutdown before creating new ones.
+#### Se alcanzó el límite de Copilot Workspace.
 
-#### Repository may not be used for a Codespace
+Soluciona esto cerrando las sesiones abiertas de Workspace y permitiendo que las sesiones anteriores se apaguen antes de crear nuevas.
 
-This may be because of a repository or organization policy restricting Codespaces creation. Please check any settings in the organization or repository that may be preventing Codespaces usage. If you do not find any please reach out to our [technical
-preview feedback channels](https://github.com/githubnext/copilot-workspace-user-manual?tab=readme-ov-file#feedback) for assistance.
+#### Es posible que el repositorio no se pueda usar para un Codespace
 
-#### The assigned location is currently unavailable.
+Esto puede deberse a una política de repositorio u organización que restringe la creación de Codespaces. Por favor, verifica cualquier configuración en la organización o repositorio que pueda estar impidiendo el uso de Codespaces. Si no encuentras ninguna configuración, comunícate con nuestros [canales de comentarios de vista previa técnica](https://github.com/githubnext/copilot-workspace-user-manual?tab=readme-ov-file#feedback) para obtener ayuda.
 
-You may try again in a few minutes. Additionally, you can change your default Codespaces region in your user settings if you continue to run into this error for a particular region by following these [public docs](https://docs.github.com/en/codespaces/setting-your-user-preferences/setting-your-default-region-for-github-codespaces).
+#### La ubicación asignada no está disponible actualmente.
 
-#### Provided `devcontainer.json` cannot be parsed to valid JSON
+Puedes intentarlo nuevamente en unos minutos. Además, puedes cambiar tu región predeterminada de Codespaces en la configuración de usuario si sigues encontrando este error para una región en particular siguiendo estos [documentos públicos](https://docs.github.com/en/codespaces/setting-your-user-preferences/setting-your-default-region-for-github-codespaces).
 
-In the chosen repository you may need to fix the `devcontainer.json` for syntax errors. You can read more about `devcontainer.json` syntax in the following [public docs](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers).
+#### El `devcontainer.json` proporcionado no se puede analizar como JSON válido
 
-#### The organization has enabled OAuth App access restrictions, meaning that access to Copilot Workspace is limited.
+En el repositorio seleccionado, es posible que debas corregir el `devcontainer.json` por errores de sintaxis. Puedes obtener más información sobre la sintaxis del `devcontainer.json` en los siguientes [documentos públicos](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers).
 
-Reach out to the organization administrator to give access to the Copilot Workspace OAuth app.
+#### La organización ha habilitado restricciones de acceso de la aplicación OAuth, lo que significa que el acceso a Copilot Workspace está limitado.
+
+Comunícate con el administrador de la organización para dar acceso a la aplicación OAuth de Copilot Workspace.

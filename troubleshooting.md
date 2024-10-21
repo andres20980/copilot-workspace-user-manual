@@ -1,37 +1,36 @@
-## Troubleshooting
+## Solución de Problemas
 
-### Introduction
+### Introducción
 
-Welcome to the troubleshooting guide for Copilot Workspace! In this section, we will provide you with helpful tips and solutions to common issues you may encounter while working with organizations and private repositories in Copilot Workspace. Our goal is to ensure that you have a smooth and productive experience. Let's dive in!
+¡Bienvenido a la guía de solución de problemas de Copilot Workspace! En esta sección, te proporcionaremos consejos útiles y soluciones a problemas comunes que puedes encontrar al trabajar con organizaciones y repositorios privados en Copilot Workspace. Nuestro objetivo es asegurarnos de que tengas una experiencia fluida y productiva. ¡Vamos a sumergirnos!
 
-### Troubleshooting Organizations
+### Solución de Problemas con Organizaciones
 
-When working with organizations in Copilot Workspace, you may encounter some common issues. Here are some troubleshooting tips to help you resolve them:
+Cuando trabajas con organizaciones en Copilot Workspace, es posible que encuentres algunos problemas comunes. Aquí tienes algunos consejos de solución de problemas para ayudarte a resolverlos:
 
-- **You are accessing an org that must approve OAuth apps**. As part of the login you authorize the OAuth app into various orgs, depending on the org policies with regard to OAuth apps. You can request access and the organization can approve the OAuth app. If you need to re-request access or revoke any access at all you can [control the status of your connection with the OAuth app](https://github.com/settings/connections/applications/903eccd8a9d2ff50288f).
+- **Estás accediendo a una organización que debe aprobar las aplicaciones OAuth**. Como parte del inicio de sesión, autorizas la aplicación OAuth en varias organizaciones, según las políticas de la organización con respecto a las aplicaciones OAuth. Puedes solicitar acceso y la organización puede aprobar la aplicación OAuth. Si necesitas volver a solicitar acceso o revocar cualquier acceso, puedes [controlar el estado de tu conexión con la aplicación OAuth](https://github.com/settings/connections/applications/903eccd8a9d2ff50288f).
 
-- **Although you appear to have the correct authorization credentials, the `github` organization has enabled OAuth App access restrictions, meaning that data access to third-parties is limited.** This is because an org restricts OAuth apps. Some of authorization attempts for orgs may fail if the org doesn't allow OAuth apps at all. This can affect even access to public repositories in organizations that deny access to OAuth apps.
+- **Aunque parezca que tienes las credenciales de autorización correctas, la organización `github` ha habilitado restricciones de acceso de aplicaciones OAuth, lo que significa que el acceso a datos de terceros está limitado**. Esto se debe a que una organización restringe las aplicaciones OAuth. Algunos intentos de autorización para organizaciones pueden fallar si la organización no permite aplicaciones OAuth en absoluto. Esto puede afectar incluso el acceso a repositorios públicos en organizaciones que niegan el acceso a aplicaciones OAuth.
 
-- **Resource protected by organization SAML enforcement. You must grant your OAuth token access to this organization**.You may be logging in to an organization with SAML control, e.g. Microsoft. They should
-  1. Log out of Copilot Workspace.
-  2. Go through SAML auth in the browser by looking at, say, a repository of the organization
-  3. Then log back into Copilot Workspace.
+- **Recurso protegido por la aplicación SAML de la organización. Debes otorgar acceso a tu token OAuth a esta organización**. Es posible que estés iniciando sesión en una organización con control SAML, por ejemplo, Microsoft. Deberías:
+  1. Cerrar sesión en Copilot Workspace.
+  2. Pasar por la autenticación SAML en el navegador al mirar, por ejemplo, un repositorio de la organización.
+  3. Luego iniciar sesión nuevamente en Copilot Workspace.
 
-### Troubleshooting Private Repositories
+### Solución de Problemas con Repositorios Privados
 
-- **You can't access a private repository in your own account**. After login you should be able to access your personal private repositories unless you have removed access for the OAuth app. If you have trouble, it is possible it is because you landed in Copilot Workspace via a sharing link and have only given public repo privileges. You should log out and log back in again and this should restore access. Failing that you should [check the status of their connection with the OAuth app](https://github.com/settings/connections/applications/903eccd8a9d2ff50288f).
+- **No puedes acceder a un repositorio privado en tu propia cuenta**. Después de iniciar sesión, deberías poder acceder a tus repositorios privados personales a menos que hayas eliminado el acceso para la aplicación OAuth. Si tienes problemas, es posible que hayas llegado a Copilot Workspace a través de un enlace de uso compartido y solo hayas dado privilegios de repositorio público. Deberías cerrar sesión e iniciar sesión nuevamente, y esto debería restaurar el acceso. Si eso no funciona, deberías [verificar el estado de tu conexión con la aplicación OAuth](https://github.com/settings/connections/applications/903eccd8a9d2ff50288f).
 
-## Ambiguity Warnings
+## Advertencias de Ambigüedad
 
-If Copilot Workspace detects that your task is overly ambiguous/unclear (e.g. it doesn’t seem aligned with the goals/focus of the repo), then it may warn you about that and ask you to clarify the task further, before you can carry on. This is done to prevent hallucination in the specification and help guide you towards the “pit of success”, since subsequent stages of the workflow work best with sufficient detail.
+Si Copilot Workspace detecta que tu tarea es demasiado ambigua o poco clara (por ejemplo, no parece estar alineada con los objetivos/foco del repositorio), es posible que te advierta al respecto y te pida que aclares aún más la tarea antes de poder continuar. Esto se hace para evitar la especulación en la especificación y ayudarte a avanzar hacia el "pozo del éxito", ya que las etapas posteriores del flujo de trabajo funcionan mejor con suficiente detalle.
 
-<img src="images/further-techniques/ambiguous-spec.png" width=600 alt="Ambiguous specification">
+<img src="images/further-techniques/ambiguous-spec.png" width=600 alt="Especificación ambigua">
 
-*A warning that a task is too ambiguous and that their intent needs to be clarified*
+*Una advertencia de que una tarea es demasiado ambigua y que se necesita aclarar la intención*
 
+### Solución de Problemas con Codespaces
 
-### Troubleshooting Codespaces
+- **No se pudo determinar el propietario facturable para un nuevo codespace, es posible que el repositorio no se pueda utilizar para un codespace**. La aplicación OAuth de CW no está instalada en la organización del propietario facturable.
 
-- **Billable owner could not be determined for a new codespace, Repository may not be used for a codespace.** The CW OAuth app is not installed in the billable owner's organization.
-
-Please view the [Codespaces Guide](codespaces-guide.md) for more information on Codespaces and troubleshooting common errors.
+Consulta la [Guía de Codespaces](codespaces-guide.md) para obtener más información sobre Codespaces y solucionar errores comunes.

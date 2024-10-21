@@ -42,7 +42,7 @@ This workflow is pretty slick, because it allows the initial CW plan to be both 
 
 At the moment, this experience supports codebases that are written in TypeScript/JavaScript, Python, Java, and C#. So if you're working in one of those languages, we'd love to hear your feedback! And if not, we'd love to hear whether this capability would be useful, in order to help us prioritize new languages in the future 🙏
 
-And while we let this capability bake a bit, it's currently disabled by default. So if you'd like to give it a try, simply open the `Experiments` panel (under the avatar menu) and check the `Enable follow up` setting. 
+And while we let this capability bake a bit, it's currently disabled by default. So if you'd like to give it a try, simply open the `Experimentos` panel (under the avatar menu) and check the `Enable follow up` setting. 
 
 ### Brainstorm enhancements
 
@@ -176,13 +176,13 @@ We've enabled external URL fetching by default, and made the following improveme
 
 <img src="https://github.com/user-attachments/assets/3937dcfd-db48-4e4b-8366-a76d1e06fee1" width="350px" />
 
-> Note: If you'd like to disable external URLs from being enabled by default, then you can turn off the `Automatically include external URLs in context` setting in your `Settings` panel (underneath the avatar menu).
+> Note: If you'd like to disable external URLs from being enabled by default, then you can turn off the `Automatically include external URLs in context` setting in your `Configuraciones` panel (underneath the avatar menu).
 
 ### Auto-completing sessions
 
 We introduced a new setting that allows you to automatically mark sessions as complete after creating a PR/branch/repo for them. For users that create many sessions, this can help keep your `Recent sessions` list (on the [dashboard](https://copilot-workspace.githubnext.com)) nice and clean. And if you later decide that you need to continue a session that was marked as complete, you can always resume it from the [Completed sessions list](https://copilot-workspace-dev.githubnext.com/?view=completed) at any time :thumb:
 
-> To enable this behavior, open your user `Settings` (underneath the avatar menu in the upper-right), and select the `Mark sessions as complete after committing` option.
+> To enable this behavior, open your user `Configuraciones` (underneath the avatar menu in the upper-right), and select the `Mark sessions as complete after committing` option.
 
 ### High contrast mode
 
@@ -190,7 +190,7 @@ CW already supports a light and dark color theme, and will match your system pre
 
 <img src="https://github.com/user-attachments/assets/e54a0d92-901e-44c5-9d11-d7c3f812a6c5" width="800px" />
 
-> To enable this behavior, open your user `Settings` (underneath the avatar menu in the upper-right), and select the `Enable high contrast mode` option.
+> To enable this behavior, open your user `Configuraciones` (underneath the avatar menu in the upper-right), and select the `Enable high contrast mode` option.
 
 ### Custom instructions
 
@@ -222,7 +222,7 @@ We've introduced a major new CW capability that we're calling "brainstorming" (�
 
 <img src="https://github.com/user-attachments/assets/a4884997-43cb-4b84-a414-d407f3a87e28" width="700px" />
 
-> Note: This feature isn't currently enabled by default. So if you'd like to try it, then enable the `Activate brainstorming` setting in your `Experiments` panel.
+> Note: This feature isn't currently enabled by default. So if you'd like to try it, then enable the `Activate brainstorming` setting in your `Experimentos` panel.
 
 #### Project exploration / learning
 
@@ -301,7 +301,7 @@ This will take you into a new session where you can define (or brainstorm!) what
 
 <img src="https://github.com/user-attachments/assets/e1c8b1b9-ca3a-40ea-a25f-3929772aa19e" width="800px" />
 
-Additionally, if you'd like to create a repository from an existing template (as opposed to a blank repo), then simply click the `Choose a repository` link from the dashboard, search for the template you want to use (e.g. `express starter`), and then select it. This will take you into the same "new repo" flow as above, but will display a `Template` panel with the template's `README` contents in it. Between the new repo + template repo flow, and the addition of brainstorming, we're excited to see how much we can improve the process of bootstrapping new projects 💙
+Additionally, if you'd like to create a repository from an existing template (as opposed to a blank repo), then simply click the `Choose a repository` link from the dashboard, search for the template you want to use (e.g. `express starter`), and then select it. This will take you into the same "new repo" flow as above, but will display a `Template` panel with the template's `LEEME` contents in it. Between the new repo + template repo flow, and the addition of brainstorming, we're excited to see how much we can improve the process of bootstrapping new projects 💙
 
 ### VS Code: Implement/revise specific files
 
@@ -380,7 +380,7 @@ Like everything else in CW, this new `Commands` section is fully editable, and s
 
 <img src="https://github.com/user-attachments/assets/98e82301-450e-45f0-8f02-3ff422cc3695" width="400px" />
 
-> Note: This feature isn't currently enabled by default. So if you'd like to give it a try, you'll need to open your avatar menu in the upper-right, select `Experiments`, and then check the `Allow shell command generation in the plan` setting.
+> Note: This feature isn't currently enabled by default. So if you'd like to give it a try, you'll need to open your avatar menu in the upper-right, select `Experimentos`, and then check the `Allow shell command generation in the plan` setting.
 
 ### Integrated file tree
 
@@ -424,7 +424,7 @@ When a task references URLs, they will now be displayed in the `Additional conte
 
 <img src="https://github.com/user-attachments/assets/ce02119f-35c4-49dc-bd3e-c4c831f41e01" width="400px" />
 
-> Note: By default, CW will spider URLs that point at GitHub issues, PRs, and repo files. However, if you want it to spider external web URLs, then you need to enable the `Utilize referenced generic web content in analysis` setting in the `Experiments` dialog (underneath your avatar menu).
+> Note: By default, CW will spider URLs that point at GitHub issues, PRs, and repo files. However, if you want it to spider external web URLs, then you need to enable the `Utilize referenced generic web content in analysis` setting in the `Experimentos` dialog (underneath your avatar menu).
 
 ### Cancellation improvements
 
@@ -468,7 +468,7 @@ This is helpful, because it provides visibility into the external context that w
 
 In order to simplify the CW workflow, we're removing the `Specification` panel from the timeline, and introducing it as optional context to the `Task`. That way, if your task description already defines the sufficient details for your intent, then you can jump straight to planning. However, if you'd like CW to help expand/ellaborate/explore on your description, then you can ask it to add a spec, and then treat that as additional input to the plan 🚀 (along with any comments and repo-wide instructions).
 
-Since this is a noticeable change, we're initially introducing it as an opt-in setting, which you can enable via the `Move specficiation to task panel` option in the `Experiments` dialog. When enabled, you'll see an `Add specification` button in the `Additional context` section of the `Task` panel. When you click that, it will generate the spec as usual, and then display a `Specification` entry in the context section for the task. If you click this, it will open the spec as a file tab, which let's you edit, revise, or regenerate the content. But with a much nicer, and full-screen view ⭐
+Since this is a noticeable change, we're initially introducing it as an opt-in setting, which you can enable via the `Move specficiation to task panel` option in the `Experimentos` dialog. When enabled, you'll see an `Add specification` button in the `Additional context` section of the `Task` panel. When you click that, it will generate the spec as usual, and then display a `Specification` entry in the context section for the task. If you click this, it will open the spec as a file tab, which let's you edit, revise, or regenerate the content. But with a much nicer, and full-screen view ⭐
 
 <img src="https://github.com/user-attachments/assets/41b2864a-3b9f-45e0-a62e-071b3b9a6412" width="800px" />
 
@@ -570,7 +570,7 @@ By default, whitespace changes are now visible within the file diff editors. Thi
 
    <img src="https://github.com/user-attachments/assets/7d285c40-16b0-40fd-a009-dbd72012ee76" width="300px" />
    
-   To turn this on, simply click your avatar in the upper-right, select `Settings`, and then check the `Show notification after implementing` option. Your browser will ask for permission for CW to show notifications, and so make sure to approve that 👍
+   To turn this on, simply click your avatar in the upper-right, select `Configuraciones`, and then check the `Show notification after implementing` option. Your browser will ask for permission for CW to show notifications, and so make sure to approve that 👍
 
    <img src="https://github.com/user-attachments/assets/898162a8-5f32-426e-8080-8444d558e80f" width="300px" />
 
@@ -600,7 +600,7 @@ By default, whitespace changes are now visible within the file diff editors. Thi
  
    1. *Arbitrary web URLs* - If you reference a public web URL, then CW will fetch and use a summary of its content. Additionally, if you link to a specific fragment of a page (e.g. `#link-to-a-specific-heading`), then CW will extract and focus on just that section. This allows you to reference documentation/blog posts/tweets/etc. that can provide more recent and/or specific instructions of what you're trying to accomplish 💪
  
-    > Note: This capability isn't enabled by default, and so if you'd like to give it a try, click the `Experiments` link in your avatar menu, and check either `Utilize linked issues, PR, and GitHub file links in analysis` and/or `Utilize referenced generic web content in analysis`.
+    > Note: This capability isn't enabled by default, and so if you'd like to give it a try, click the `Experimentos` link in your avatar menu, and check either `Utilize linked issues, PR, and GitHub file links in analysis` and/or `Utilize referenced generic web content in analysis`.
 
 * **NL revision** - After you implement a plan, Copilot Workspace now displays a natural language revision bar at the bottom of the `Files changed` section. This allows you to update the plan in complex and arbitrary ways, while remaining focused on reviewing the changes.
 
@@ -624,13 +624,13 @@ By default, whitespace changes are now visible within the file diff editors. Thi
 
     <img src="https://github.com/user-attachments/assets/d8229ba0-c373-4ff6-875a-677b0b5414d1" width="500px" />
 
-* **Sessions + Settings** - The user menu (that you get to by clicking your avatar in the upper-right) now includes two new items:
+* **Sessions + Configuraciones** - The user menu (that you get to by clicking your avatar in the upper-right) now includes two new items:
 
    * `Your sessions` - This navigates you to the [CW dashboard](https://copilot-workspace.githubnext.com), so you can see your recent/bookmarked/completed sessions. We got feedback that folks weren't discovering the dashboard, and so we wanted to make this a bit more discoverable (since it's super useful!)
 
       <img src="https://github.com/user-attachments/assets/28992503-8f08-4fde-bb7c-f840fe0471f7" width="200px" />
 
-   * `Settings` - This opens a dialog with some optional user settings that can be enabled/disabled. To start, this dialog includes the existing options to automatically start a Codespace on session start/implement. But we also introduced a new setting called `Collapse timeline on implement`, which as the name implies, allows you to automatically collapse the left-side panel after implementing.
+   * `Configuraciones` - This opens a dialog with some optional user settings that can be enabled/disabled. To start, this dialog includes the existing options to automatically start a Codespace on session start/implement. But we also introduced a new setting called `Collapse timeline on implement`, which as the name implies, allows you to automatically collapse the left-side panel after implementing.
    
      When paired with the new NL revision bar, this setting allows you to enter a sort of "zen mode" for Copilot Workspace, where once you're happy with the plan, you can focus your entire screen on reviewing and revising the code 🚀
  
@@ -688,11 +688,11 @@ By default, whitespace changes are now visible within the file diff editors. Thi
 
    <img src="https://github.com/user-attachments/assets/ccffd7a9-ba10-4da7-a025-1df765c334fb" width="400px" />
   
-* **Experiments** - We periodically ship new features that are off by-default, since they're not quite ready for prime-time usage. And to make it easier to discover these features, and know when you have them on, the workspace toolbar now displays a beaker icon, that indicates how many experiments you have enabled.
+* **Experimentos** - We periodically ship new features that are off by-default, since they're not quite ready for prime-time usage. And to make it easier to discover these features, and know when you have them on, the workspace toolbar now displays a beaker icon, that indicates how many experiments you have enabled.
 
    <img src="https://github.com/user-attachments/assets/d9fc7b50-d736-4d01-b3e1-5df5ce70b964" width="200px" />
 
-   When clicked, this button brings up the `Experiments` dialog, which let's you try out our cutting-edge features (and then hopefully send us feedback!) 🔥
+   When clicked, this button brings up the `Experimentos` dialog, which let's you try out our cutting-edge features (and then hopefully send us feedback!) 🔥
 
    <img src="https://github.com/user-attachments/assets/00af1eb1-dddf-4f9a-b82f-2a2097b2e649" width="400px" />
 
@@ -782,7 +782,7 @@ These changes also make it easier to edit code post-implement, since it's a lot 
 
 We made numerous improvements to the way we generate the spec and plan, which should increase the quality a bit, for both larger repos and complex tasks. Additionally, we improved our code generation, so that it shouldn't delete unrelated code/comments when implementing a task. 
 
-Finally, after enabling speculative decoding a few weeks ago, we've confirmed that it's stable enough to be on by default, and we've removed it from the `Experiments` panel. That said, we really appreciate all the great feedback from preview users, as we've continued to focus on improving the perf and quality of code generation 🙏
+Finally, after enabling speculative decoding a few weeks ago, we've confirmed that it's stable enough to be on by default, and we've removed it from the `Experimentos` panel. That said, we really appreciate all the great feedback from preview users, as we've continued to focus on improving the perf and quality of code generation 🙏
 
 ## 📅 12 July 2024
 
@@ -800,7 +800,7 @@ Finally, after enabling speculative decoding a few weeks ago, we've confirmed th
 
   _The little green dot indicates that you're session is enriched with language services, thanks to the auto-started Codespaces!_
 
-   > Note: If a repo includes a `devcontainer.json` file, we don't currently auto-start the Codespace. We'll be adding support for that soon, but in the meantime, you can enable this by checking the `Spin up a codespace on start of implement` setting in the `Experiments` panel.
+   > Note: If a repo includes a `devcontainer.json` file, we don't currently auto-start the Codespace. We'll be adding support for that soon, but in the meantime, you can enable this by checking the `Spin up a codespace on start of implement` setting in the `Experimentos` panel.
 
 * **Increased usage quota** - In order to enable power users to get the most out of Copilot Workspace, we've doubled the daily usage quota. We were seeing lots of cases of folks hitting their limit, and so we're excited to unblock that, and let to AI-assisted creativity flow more freely 💙
 
@@ -909,7 +909,7 @@ For example, here's a [sample session](https://copilot-workspace-staging.githubn
 
    <img src="https://github.com/user-attachments/assets/8ca206e8-fde5-432f-9105-b0700e427f1a" width="400px" />
 
-   _Note: In order to make use of Copilot completions, you need to check the `Enable Copilot and language services in editors` option in the `Experiments` dialog (which is available when clicking on your avatar in the upper-right)._
+   _Note: In order to make use of Copilot completions, you need to check the `Enable Copilot and language services in editors` option in the `Experimentos` dialog (which is available when clicking on your avatar in the upper-right)._
 
 * **Simplified branch tasks** - When you start a task from the GitHub repository page, Copilot Workspace will now respect the currently selected branch. That way, you can easily perform any tasks, against any branch 🔥
 
@@ -917,7 +917,7 @@ For example, here's a [sample session](https://copilot-workspace-staging.githubn
 
 ### Perf Improvements
 
-* **Speculative decoding** - We're working to improve the feedback loop when implementing a plan. And as part of that, we've introduced a new experiment that should speed up code generation by ~2.5x (!!). We'll be turning this on by default soon, but for now, you can try it out by checking the `Use speculative decoding to speed up implement` option in the `Experiments` dialog (which you can access by clicking your avatar in the upper-right).
+* **Speculative decoding** - We're working to improve the feedback loop when implementing a plan. And as part of that, we've introduced a new experiment that should speed up code generation by ~2.5x (!!). We'll be turning this on by default soon, but for now, you can try it out by checking the `Use speculative decoding to speed up implement` option in the `Experimentos` dialog (which you can access by clicking your avatar in the upper-right).
 
 * **New Session** - When you click the `New Session` button from the [Copilot Workspace dashboard](https://copilot-workspace.githubnext.com), your MRU list of repositories should show up immediately, since we now pre-fetch/cache them in advance. That way, starting a new session is 2-3 faster 🏎️
 
@@ -930,103 +930,103 @@ For example, here's a [sample session](https://copilot-workspace-staging.githubn
    To get started, simply navigate to the [Copilot Workspace dashboard](https://copilot-workspace.githubnext.com), and then either click the `Install Copilot Workspace` button in the navigation bar (on desktop), or click `Add to Home Screen` from the share menu (on mobile).
 
    ![image](https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/399ff59d-08b7-464a-9eed-cc5b1b3f2260)<br />
-   &nbsp;&nbsp;_Working on a task in a beautiful Copilot Workspace PWA from your desktop_ 😻
+   &nbsp;&nbsp;_Trabajando en una tarea en un hermoso espacio de trabajo de Copilot desde tu escritorio_ 😻
 
-   &nbsp;&nbsp;<img src="https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/ba6673bb-5fcb-4406-9975-e3c6aa7e68ef" width="400px" /><br />
-   &nbsp;&nbsp;_Copilot Workspace nestled comfortably on the iOS dock_
+      &nbsp;&nbsp;<img src="https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/ba6673bb-5fcb-4406-9975-e3c6aa7e68ef" width="400px" /><br />
+      &nbsp;&nbsp;_Copilot Workspace cómodamente ubicado en el dock de iOS_
 
-* **Organizing the plan** - You can now re-order the plan by moving files up or down in the list. And since the `Files changed` list is also sorted by the plan, this allows you to better organize sessions for both self-review, but also, to better curate them when sharing sessions with others (like [this](https://copilot-workspace.githubnext.com/lostintangent/gitdoc/issues/52?shareId=94b2e8df-15ea-41bd-b5f6-a1d9f5b376dc)!).
+   * **Organizando el plan** - Ahora puedes reordenar el plan moviendo los archivos hacia arriba o hacia abajo en la lista. Y dado que la lista de `Archivos modificados` también está ordenada por el plan, esto te permite organizar mejor las sesiones tanto para la auto-revisión, como para compartirlas con otros (¡como [esta](https://copilot-workspace.githubnext.com/lostintangent/gitdoc/issues/52?shareId=94b2e8df-15ea-41bd-b5f6-a1d9f5b376dc)!).
 
-   When you actually implement the plan, Copilot Workspace will determine the most logical order to make edits in (e.g. creating shared functions/components, before editing their consumers). So you can feel free to organize the plan in whichever way feels best to you, and rest assured that Copilot will continue to do the right thing 🙌
+      Cuando implementas el plan, Copilot Workspace determinará el orden más lógico para realizar las ediciones (por ejemplo, crear funciones/componentes compartidos antes de editar sus consumidores). Así que siéntete libre de organizar el plan de la manera que te parezca mejor, y ten la seguridad de que Copilot seguirá haciendo lo correcto 🙌
 
-   <img src="https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/a6b92ea0-f1b4-40c3-ac7c-59f4d89a1489" width="400px" /><br />
-   &nbsp;&nbsp;_Updating the order of files in a plan_
+      <img src="https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/a6b92ea0-f1b4-40c3-ac7c-59f4d89a1489" width="400px" /><br />
+      &nbsp;&nbsp;_Actualizando el orden de los archivos en un plan_
 
-* **Enhanced social preview image** - When you share a Copilot Workspace session on Slack/Teams/Twitter/SMS/etc. (like [this one](https://copilot-workspace.githubnext.com/lostintangent/gitdoc/issues/52?shareId=94b2e8df-15ea-41bd-b5f6-a1d9f5b376dc)!) the preview now displays a customized image for the repo and task it’s associated with _(for public repos)_. It also now includes a warp speed background, since clicking on the link is sort of like transporting you into another space 🚀 (and of course, it just looks cool...)
+   * **Mejora de la vista previa social** - Cuando compartes una sesión de Copilot Workspace en Slack/Teams/Twitter/SMS/etc. (como [esta](https://copilot-workspace.githubnext.com/lostintangent/gitdoc/issues/52?shareId=94b2e8df-15ea-41bd-b5f6-a1d9f5b376dc)!), la vista previa ahora muestra una imagen personalizada para el repositorio y la tarea asociada _(para repositorios públicos)_. También incluye un fondo de velocidad warp, ya que hacer clic en el enlace es como transportarte a otro espacio 🚀 (y, por supuesto, se ve genial...)
 
-   <img width="800px" src="https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/b6bab922-1dd2-40c5-825c-53a2c870cb15" /><br />
-   _Sharing a Copilot Workspace session with someone in Slack_
+      <img width="800px" src="https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/b6bab922-1dd2-40c5-825c-53a2c870cb15" /><br />
+      _Compartiendo una sesión de Copilot Workspace con alguien en Slack_
 
-### Bug Fixes
+   ### Correcciones de errores
 
-* **Manually adding files to the plan** - The `Add file to plan` dialog now correctly detects existing file paths in all cases, and makes it easy to add/edit/rename/delete files from the plan.
+   * **Agregar archivos manualmente al plan** - El diálogo `Agregar archivo al plan` ahora detecta correctamente las rutas de archivo existentes en todos los casos, y facilita la adición/edición/renombrado/eliminación de archivos del plan.
 
-* **File syncing for long-ish running sessions** - The bi-directional file syncer (that syncs changes between the Workspace and the terminal) now properly syncs files for sessions, when the `HEAD` of the branch has since progressed. This makes it easier to work on Workspace sessions throughout the day, or across days, regardless how active the target branch is 💪
+   * **Sincronización de archivos para sesiones de larga duración** - El sincronizador de archivos bidireccional (que sincroniza los cambios entre el Workspace y la terminal) ahora sincroniza correctamente los archivos para las sesiones, cuando el `HEAD` de la rama ha avanzado desde entonces. Esto facilita trabajar en sesiones de Workspace a lo largo del día, o durante varios días, sin importar cuán activa sea la rama objetivo 💪
 
-## 📅 17 May 2024
+   ## 📅 17 de mayo de 2024
 
-### Features / Enhancements
+   ### Funciones / Mejoras
 
-* **Revise the spec, plan, and code with natural language** - In addition to making direct edits to the specification or plan, you can now provide natural language instructions for how you'd like to revise them (e.g. `Add tests for this change`). This same capability is also available on the header for changed files, which allows you to revise code based on a specific instruction (e.g. `Move the logging logic into a separate function`), in addition to editing it manually.
+   * **Revisar la especificación, el plan y el código con lenguaje natural** - Además de realizar ediciones directas en la especificación o el plan, ahora puedes proporcionar instrucciones en lenguaje natural sobre cómo te gustaría revisarlos (por ejemplo, `Agregar pruebas para este cambio`). Esta misma capacidad también está disponible en el encabezado de los archivos modificados, lo que te permite revisar el código en función de una instrucción específica (por ejemplo, `Mover la lógica de registro a una función separada`), además de editarlo manualmente.
 
-   ![image](https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/883e48a1-265c-4b12-bfaa-4c70e4ec2317)
+      ![image](https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/883e48a1-265c-4b12-bfaa-4c70e4ec2317)
 
-* **Copilot completions and language services in embedded editors** - We've shipped an initial experience for getting hover info, error squiggles, go-to-definition, and Copilot completions directly from the embedded editors in Copilot Workspace. That way you can quickly spot issues to fix, easily navigate the code changes, or make manual edits, while receiving the Copilot assistance you know and love 💙
+   * **Completados de Copilot y servicios de lenguaje en editores integrados** - Hemos lanzado una experiencia inicial para obtener información al pasar el cursor, subrayados de errores, ir a la definición y completados de Copilot directamente desde los editores integrados en Copilot Workspace. De esta manera, puedes detectar rápidamente problemas para solucionar, navegar fácilmente por los cambios de código o realizar ediciones manuales, al tiempo que recibes la asistencia de Copilot que conoces y amas 💙
 
-   ![image](https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/1fd21aa6-028c-44c7-ac9e-3fa55249c914)
+      ![image](https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/1fd21aa6-028c-44c7-ac9e-3fa55249c914)
 
-   Here's a few things to note about this enhancement:
+      Aquí hay algunas cosas que debes tener en cuenta acerca de esta mejora:
 
-   * It isn't on by default, and so if you want to try it, you need to click on your avatar in the upper right, select `Experiments` and then check the `Enable Copilot and language services in editors` setting.
-   * The language services (hover info, error squiggles, go-to-definition) currently only support JavaScript/TypeScript, Python and Go. But more languages are coming!
-   * Support for Copilot completions requires an active Copilot subscription. If you don't have one, then you simply won't see "ghost text" in the editor, but you can still use the language services described above.
- 
-* **UX layout persistence** - When you collapse changed files and/or minimize the timeline, that UX state is now properly persisted for the session. That way, when you return to a session later, you can pick up exactly where you left off. Or if you share a snapshot with someone else, you can curate the UX to look exactly how you want them to see it 🚀
+      * No está activado de forma predeterminada, por lo que si quieres probarlo, debes hacer clic en tu avatar en la esquina superior derecha, seleccionar `Experimentos` y luego marcar la opción `Habilitar Copilot y servicios de lenguaje en los editores`.
+      * Los servicios de lenguaje (información al pasar el cursor, subrayados de errores, ir a la definición) actualmente solo admiten JavaScript/TypeScript, Python y Go. ¡Pero se agregarán más lenguajes!
+      * El soporte para completados de Copilot requiere una suscripción activa a Copilot. Si no tienes una, simplemente no verás "texto fantasma" en el editor, pero aún puedes usar los servicios de lenguaje descritos anteriormente.
+    
+   * **Persistencia del diseño de la interfaz de usuario** - Cuando colapsas los archivos modificados y/o minimizas la línea de tiempo, ese estado de la interfaz de usuario ahora se guarda correctamente para la sesión. De esta manera, cuando regreses a una sesión más tarde, podrás retomar exactamente donde lo dejaste. O si compartes una captura de pantalla con alguien más, podrás personalizar la interfaz de usuario para que se vea exactamente como quieres que la vean 🚀
 
-   ![image](https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/529c4aef-19ca-47b1-8d07-47bd6eab799b)
+      ![image](https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/529c4aef-19ca-47b1-8d07-47bd6eab799b)
 
-* **Redesigned progress indicator for file implementation** - When a file is currently being implemented, we now display a progress bar underneath it to better visualize the status of the code generation. Additionally, when an existing file is being edited, we now properly display the delta of code changes that were added.
+   * **Indicador de progreso rediseñado para la implementación de archivos** - Cuando se está implementando un archivo, ahora mostramos una barra de progreso debajo de él para visualizar mejor el estado de la generación de código. Además, cuando se está editando un archivo existente, ahora mostramos correctamente el delta de los cambios de código que se agregaron.
 
-   ![image](https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/b58a8c2a-24b7-4cf3-84fb-46a9c4b81daa)
+      ![image](https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/b58a8c2a-24b7-4cf3-84fb-46a9c4b81daa)
 
-   ![image](https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/f725a6ca-2a31-4603-b602-d88c9736c8f8)
+      ![image](https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/f725a6ca-2a31-4603-b602-d88c9736c8f8)
 
-* **Easier code review on mobile** - When viewing a multi-file session on a mobile device, you can now click an implemented file to view the changes in a full-screen editor, and then easily page between the other files that were edited.
+   * **Revisión de código más fácil en dispositivos móviles** - Al ver una sesión de varios archivos en un dispositivo móvil, ahora puedes hacer clic en un archivo implementado para ver los cambios en un editor de pantalla completa, y luego pasar fácilmente entre los otros archivos que se editaron.
 
-   <img src="https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/3d04c431-b61c-4e53-86fd-723c2fd9439a" width="400px" />
+      <img src="https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/3d04c431-b61c-4e53-86fd-723c2fd9439a" width="400px" />
 
-* **The "topic" now renders markdown** - The question/task that is displayed at the top of the `Specification` panel is now rendered properly when it includes markdown. In particular, it's common for this to include backticks when the task definition refers to a symbol using them.
+   * **El "tema" ahora muestra markdown** - La pregunta/tarea que se muestra en la parte superior del panel `Especificación` ahora se muestra correctamente cuando incluye markdown. En particular, es común que esto incluya acentos graves cuando la definición de la tarea se refiere a un símbolo que los utiliza.
 
-   <img src="https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/92ee8afc-1f95-4d5d-8ed5-dfcb6bcff14c" width="500px" />
+      <img src="https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/92ee8afc-1f95-4d5d-8ed5-dfcb6bcff14c" width="500px" />
 
-* **Add manually edited files to the plan** - In addition to generating code changes with AI, Copilot Workspace allows you to manually edit files through its file explorer and/or the integrated terminal. And in order to make it easier to include these manually edited files in the plan (e.g. so you could do further AI-assisted iteration on them), they now include a `+` button in their header bar, which let's you one-click add them to the plan. 
+   * **Agregar archivos editados manualmente al plan** - Además de generar cambios de código con IA, Copilot Workspace te permite editar archivos manualmente a través de su explorador de archivos y/o la terminal integrada. Y para facilitar la inclusión de estos archivos editados manualmente en el plan (por ejemplo, para realizar una iteración adicional asistida por IA), ahora incluyen un botón `+` en su barra de encabezado, que te permite agregarlos al plan con un solo clic. 
 
-   <img src="https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/baa3c855-6686-4869-8405-372d2251d2fd" width="700px" />
+      <img src="https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/baa3c855-6686-4869-8405-372d2251d2fd" width="700px" />
 
-* **Share links now include the repo and title in their preview** - If you share a session link with someone via Twitter, Slack, Teams, SMS, etc. the preview that is displayed to them will now properly include the repository that the session is associated with, and the title of the session. That way, it's a little bit clearer what you're sharing, before they actually click it.
+   * **Los enlaces compartidos ahora incluyen el repositorio y el título en su vista previa** - Si compartes un enlace de sesión con alguien a través de Twitter, Slack, Teams, SMS, etc., la vista previa que se muestra ahora incluirá correctamente el repositorio al que está asociada la sesión y el título de la sesión. De esta manera, será un poco más claro lo que estás compartiendo antes de que realmente hagan clic en él.
 
-   <img src="https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/a616f9bf-5220-4301-b633-d3f24fcc787a" width="500px" />
+      <img src="https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/a616f9bf-5220-4301-b633-d3f24fcc787a" width="500px" />
 
-* **Improved status messages for panels** - Whenever you generate/regenerate/revise the spec/plan, or implement files, those steps now display more helpful status messages.
+   * **Mejoras en los mensajes de estado para los paneles** - Ahora se muestran mensajes de estado más útiles cuando generas/regeneras/revisionas la especificación/el plan, o implementas archivos.
 
-## 📅 9 May 2024
+   ## 📅 9 de mayo de 2024
 
-### Features / Enhancements
+   ### Funciones / Mejoras
 
-* **Support for very large repositories** - The first release of Copilot Workspace only worked up to limited repository size. These limitations are now largely lifted.
-  
-* **Copilot Workspace will now process "delete" operations efficiently** - Copilot Workspace will now process 'delete' operations more promptly, without making any unnecessary model invocations.
+   * **Soporte para repositorios muy grandes** - La primera versión de Copilot Workspace solo funcionaba con un tamaño de repositorio limitado. Estas limitaciones ahora se han levantado en gran medida.
+     
+   * **Copilot Workspace ahora procesará las operaciones de "eliminar" de manera eficiente** - Copilot Workspace ahora procesará las operaciones de 'eliminar' de manera más rápida, sin realizar invocaciones innecesarias al modelo.
 
-* **Color the `Issue` and `Pull Request` panel icons based on their state** - When opening an issue or pull request within Copilot Workspace, we'll now indicate the state of the issue/PR, using the same colors as GitHub.com: open (green), completed/merged (purple), closed (red), and closed as not planned (grey). That way, the status of the issue/PR will be immediately clear 👍
+   * **Colorear los iconos de los paneles de `Issue` y `Pull Request` según su estado** - Al abrir un issue o pull request dentro de Copilot Workspace, ahora indicaremos el estado del issue/PR utilizando los mismos colores que en GitHub.com: abierto (verde), completado/fusionado (morado), cerrado (rojo) y cerrado como no planificado (gris). De esta manera, el estado del issue/PR será inmediatamente claro 👍
 
-   <img src="https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/1f127b54-a697-4594-8a0f-946dfb47b06b" width="600px" />
+      <img src="https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/1f127b54-a697-4594-8a0f-946dfb47b06b" width="600px" />
 
-   *Opening an issue that's closed as completed*
+      *Abriendo un issue que está cerrado como completado*
 
-   <img src="https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/1f9a0ea6-bf6f-4f1e-961c-107f27dbb12c" width="600px" />
+      <img src="https://github.com/githubnext/copilot-workspace-user-manual/assets/116461/1f9a0ea6-bf6f-4f1e-961c-107f27dbb12c" width="600px" />
 
-   *Opening a pull request that's been closed*
+      *Abriendo un pull request que ha sido cerrado*
 
-### Bug Fixes
+   ### Correcciones de errores
 
-* **Fix session reload for any session not on default branch of repository**. A user reported that Copilot Workspace could not reload sessions if they were associated with a non-default branch of a repository. This is now fixed.
+   * **Corregir la recarga de sesiones para cualquier sesión que no esté en la rama predeterminada del repositorio**. Un usuario informó que Copilot Workspace no podía recargar sesiones si estaban asociadas con una rama no predeterminada de un repositorio. Esto ahora está solucionado.
 
-* **Fix virtual keyboard overlaying editor**.  A fix was made for mobile where the virtual keyboard was obscuring some of the file editor.
+   * **Corregir superposición del teclado virtual en el editor**. Se corrigió un problema en dispositivos móviles donde el teclado virtual ocultaba parte del editor de archivos.
 
-* **Fix scroll to implementation**.  "Scroll to implementation" for a step of the plan was not working as expected. This is now fixed.
+   * **Corregir desplazamiento a la implementación**. El "desplazamiento a la implementación" de un paso del plan no funcionaba como se esperaba. Esto ahora está solucionado.
 
-* **Numerous mobile layout fixes**. Many subtle but important fixes have been made to layout and interaction on mobile devices.
+   * **Numerosas correcciones de diseño en dispositivos móviles**. Se han realizado muchas correcciones sutiles pero importantes en el diseño y la interacción en dispositivos móviles.
 
-## 📅 29 April 2024
+   ## 📅 29 de abril de 2024
 
-Initial release! 🚀
+   ¡Lanzamiento inicial! 🚀

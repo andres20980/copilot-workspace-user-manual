@@ -1,41 +1,41 @@
-# Responsible AI FAQ
+# Preguntas Frecuentes sobre IA Responsable
 
-## What is Copilot Workspace? 
+## ¿Qué es Copilot Workspace?
 
-Copilot Workspace is a reimagined developer inner loop. The focal points of the experience are selecting a task, expressing intent, and then collaborating with AI towards a solution. We believe this can dramatically reduce complexity, improve productivity, and delight developers, without taking away the aspects of software development that they value most, such as decision making, creativity, and ownership. 
+Copilot Workspace es un bucle interno de desarrollo reinventado. Los puntos focales de la experiencia son seleccionar una tarea, expresar la intención y luego colaborar con la IA hacia una solución. Creemos que esto puede reducir drásticamente la complejidad, mejorar la productividad y deleitar a los desarrolladores, sin eliminar los aspectos del desarrollo de software que más valoran, como la toma de decisiones, la creatividad y la propiedad.
 
-## What can Copilot Workspace do?  
+## ¿Qué puede hacer Copilot Workspace?
 
-Copilot Workspace takes in a development task from a user, for example, a GitHub Issue, and produces a natural-language specification of the current behavior of the code, a plan for how to modify the code to complete the task, and eventually the actual code changes to all relevant files in the repo.  Each step (task, spec, plan, and implementation) is editable by the user, enabling the user to steer the AI to complete the task in the best way.     
+Copilot Workspace recibe una tarea de desarrollo de un usuario, por ejemplo, un problema de GitHub, y produce una especificación en lenguaje natural del comportamiento actual del código, un plan sobre cómo modificar el código para completar la tarea y, finalmente, los cambios reales en los archivos relevantes del repositorio. Cada paso (tarea, especificación, plan e implementación) es editable por el usuario, lo que le permite guiar a la IA para completar la tarea de la mejor manera posible.
 
-## What is/are Copilot Workspace’s intended use(s)? 
+## ¿Cuál(es) es/son el(los) uso(s) previsto(s) de Copilot Workspace?
 
-Copilot Workspace is intended to:
+Copilot Workspace tiene como objetivo:
 
-1. Accelerate software developers, helping them make small- and medium-scale code changes quickly and correctly.   
-2. Reduce the activation energy for developers to start tasks, by giving them an AI-generated starting point. 
-3. Help experienced developers work with unfamiliar programming languages and frameworks. 
-4. Help developers contribute to unfamiliar codebases, for example, to open source projects. 
+1. Acelerar a los desarrolladores de software, ayudándoles a realizar cambios de código pequeños y medianos de manera rápida y correcta.
+2. Reducir la energía de activación para que los desarrolladores inicien tareas, brindándoles un punto de partida generado por IA.
+3. Ayudar a los desarrolladores experimentados a trabajar con lenguajes de programación y marcos de trabajo desconocidos.
+4. Ayudar a los desarrolladores a contribuir en bases de código desconocidas, por ejemplo, en proyectos de código abierto.
 
-## How was Copilot Workspace evaluated? What metrics are used to measure performance? 
+## ¿Cómo se evaluó Copilot Workspace? ¿Qué métricas se utilizan para medir el rendimiento?
 
-Copilot Workspace was evaluated in the following ways: 
+Copilot Workspace se evaluó de las siguientes maneras:
 
-* Offline evaluations.  We have a corpus of known tasks and an entrypoint that allows us to run Copilot Workspace over those tasks in a headless mode.  When we make changes to our prompts, switch to a different model, etc., we run those benchmarks and manually validate the changes to Copilot Workspace’s outputs.  If we see regressions, we iterate on the prompts until there are no more regressions.  In addition, we have a larger set of benchmarks that are mined from GitHub, and we use model-driven evaluations to ensure consistent quality. 
-* User studies.  In January, we ran a round of user studies with GitHub employees where we gave them a standard task and asked them to complete the task using Copilot Workspace.  We are planning additional user studies as part of the Technical Preview.
-* Extensive dogfooding within our team.  We used Copilot Workspace to build Copilot Workspace. 
-* Red teaming.  We have prepared a set of malicious prompts and run Copilot Workspace in headless mode over those prompts.  Then we do both human- and model-driven evaluations of the output for harmful responses, and if we see those, we update our prompts and filters so that users do not encounter them. 
+* Evaluaciones sin conexión. Tenemos un corpus de tareas conocidas y un punto de entrada que nos permite ejecutar Copilot Workspace en modo sin cabeza sobre esas tareas. Cuando realizamos cambios en nuestras indicaciones, cambiamos a un modelo diferente, etc., ejecutamos esas pruebas y validamos manualmente los cambios en las salidas de Copilot Workspace. Si encontramos regresiones, iteramos en las indicaciones hasta que no haya más regresiones. Además, tenemos un conjunto más grande de pruebas que se extraen de GitHub, y utilizamos evaluaciones basadas en modelos para garantizar una calidad consistente.
+* Estudios de usuarios. En enero, realizamos una serie de estudios de usuarios con empleados de GitHub, donde les dimos una tarea estándar y les pedimos que completaran la tarea utilizando Copilot Workspace. Estamos planeando estudios de usuarios adicionales como parte de la Vista previa técnica.
+* Uso intensivo dentro de nuestro equipo. Utilizamos Copilot Workspace para construir Copilot Workspace.
+* Evaluación por parte de un equipo de seguridad. Hemos preparado un conjunto de indicaciones maliciosas y hemos ejecutado Copilot Workspace en modo sin cabeza sobre esas indicaciones. Luego, realizamos evaluaciones tanto humanas como basadas en modelos de las salidas en busca de respuestas dañinas, y si encontramos alguna, actualizamos nuestras indicaciones y filtros para que los usuarios no las encuentren.
 
-## What are the limitations of Copilot Workspace? How can users minimize the impact of Copilot Workspace’s limitations when using the system? 
+## ¿Cuáles son las limitaciones de Copilot Workspace? ¿Cómo pueden los usuarios minimizar el impacto de las limitaciones de Copilot Workspace al utilizar el sistema?
 
-Copilot Workspace is not always correct.  Users should carefully validate its output and should not blindly trust it.  If users detect inaccuracies in Copilot Workspace’s outputs, we have made it easy for them to edit and correct any model-generated outputs. We have also built validation tools, particularly a terminal which allows the user to execute the generated code in a sandboxed environment.  The user should use these tools to validate and correct Copilot Workspace’s outputs. 
+Copilot Workspace no siempre es correcto. Los usuarios deben validar cuidadosamente su salida y no confiar ciegamente en ella. Si los usuarios detectan inexactitudes en las salidas de Copilot Workspace, les hemos facilitado la edición y corrección de cualquier salida generada por el modelo. También hemos construido herramientas de validación, en particular una terminal que permite al usuario ejecutar el código generado en un entorno aislado. El usuario debe utilizar estas herramientas para validar y corregir las salidas de Copilot Workspace.
 
-## What operational factors and settings allow for effective and responsible use of Copilot Workspace? 
+## ¿Qué factores operativos y configuraciones permiten un uso efectivo y responsable de Copilot Workspace?
 
-Copilot Workspace will perform best on common programming languages and frameworks and when the natural language is English.    
+Copilot Workspace funcionará mejor en lenguajes de programación y marcos de trabajo comunes y cuando el lenguaje natural sea el inglés.
 
-Code generated by Copilot Workspace should be held to the same standard as human-written code – it should be code reviewed, have automated tests, be analyzed by linters and static analyzers, etc.  Copilot Workspace can help add automated tests to in-progress PRs, helping improve the overall health of a software project. 
+El código generado por Copilot Workspace debe cumplir con el mismo estándar que el código escrito por humanos: debe ser revisado, tener pruebas automatizadas, ser analizado por linters y analizadores estáticos, etc. Copilot Workspace puede ayudar a agregar pruebas automatizadas a las solicitudes de extracción en curso, lo que ayuda a mejorar la salud general de un proyecto de software.
 
-## What should a user do if they encounter offensive content while using Copilot Workspace? 
+## ¿Qué debe hacer un usuario si encuentra contenido ofensivo mientras usa Copilot Workspace?
 
-Please report any examples of offensive content to copilot-safety@github.com.  Please include a share link so that we can investigate. 
+Por favor, informe cualquier ejemplo de contenido ofensivo a copilot-safety@github.com. Por favor, incluya un enlace compartido para que podamos investigar.

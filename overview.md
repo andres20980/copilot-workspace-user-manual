@@ -1,177 +1,175 @@
-# Copilot Workspace: Overview
+# Copilot Workspace: Descripción General
 
-[Copilot Workspace](https://githubnext.com/projects/copilot-workspace/) is a _task-centric_ AI assistant. Each day as a developer you start with a task, and make the journey to explore, understand, refine, and complete that task, a journey that can be exciting, challenging, fascinating, and rewarding. Copilot Workspace takes this journey with you, every step of the way — the journey from task to working code. 
+[Copilot Workspace](https://githubnext.com/projects/copilot-workspace/) es un asistente de IA centrado en tareas. Cada día como desarrollador comienzas con una tarea y emprendes el viaje para explorar, comprender, refinar y completar esa tarea, un viaje que puede ser emocionante, desafiante, fascinante y gratificante. Copilot Workspace te acompaña en cada paso de este viaje, desde la tarea hasta el código funcional.
 
-Copilot Workspace is built on a set of principles that guide its design and development:
+Copilot Workspace se basa en un conjunto de principios que guían su diseño y desarrollo:
 
-* Copilot Workspace is _contextual_. It is deeply integrated with GitHub, and is aware of the context of your task — the repository, the issue, the pull request.
+* Copilot Workspace es _contextual_. Está profundamente integrado con GitHub y es consciente del contexto de tu tarea: el repositorio, el problema, la solicitud de extracción.
 
-* Copilot Workspace is _assistive_. It offers a canvas for you to navigate unfamiliar tasks, augmenting your development skills with a new kind of AI assistance.
+* Copilot Workspace es _asistente_. Ofrece un lienzo para que navegues por tareas desconocidas, mejorando tus habilidades de desarrollo con un nuevo tipo de asistencia de IA.
 
-* Copilot Workspace is _pervasive_. It is ready and waiting for you, available on every issue in every enabled repository on GitHub. And Copilot Workspace is even there for you when starting new code, available on every template repository, to create new software using natural language.
+* Copilot Workspace es _omnipresente_. Está listo y esperando por ti, disponible en cada problema de cada repositorio habilitado en GitHub. Y Copilot Workspace incluso está ahí para ti al comenzar un nuevo código, disponible en cada repositorio de plantillas para crear nuevo software utilizando lenguaje natural.
 
-* Copilot Workspace is _iterative_. Copilot Workspace encourages you to check, review, refine and iterate on AI-generated outputs. You, the developer, are in control.
+* Copilot Workspace es _iterativo_. Copilot Workspace te anima a verificar, revisar, refinar e iterar en las salidas generadas por IA. Tú, como desarrollador, tienes el control.
 
-* Copilot Workspace is _collaborative_. You can share sessions with your team and publish links to your sessions on issues and pull requests. And, if you're a repository maintainer, we give you controls to help manage the use of AI-assisted development with your repositories.
+* Copilot Workspace es _colaborativo_. Puedes compartir sesiones con tu equipo y publicar enlaces a tus sesiones en problemas y solicitudes de extracción. Y si eres el mantenedor de un repositorio, te brindamos controles para ayudarte a gestionar el uso del desarrollo asistido por IA en tus repositorios.
 
-* Copilot Workspace is _configurable_. You can integrate Copilot Workspace into your workflows via deep links to Copilot Workspace that specify common tasks.
+* Copilot Workspace es _configurable_. Puedes integrar Copilot Workspace en tus flujos de trabajo a través de enlaces profundos a Copilot Workspace que especifican tareas comunes.
 
-In this manual, we will guide you through the concepts and features of Copilot Workspace, and help you get started with using it effectively.
+En este manual, te guiaremos a través de los conceptos y características de Copilot Workspace y te ayudaremos a comenzar a utilizarlo de manera efectiva.
 
-<img src="images/overview/session.png" width="600" alt="A fully-implemented workspace session">
+<img src="images/overview/session.png" width="600" alt="Una sesión de espacio de trabajo completamente implementada">
 
-*A fully-implemented workspace session*
+*Una sesión de espacio de trabajo completamente implementada*
 
-## Features
+## Características
 
-1. [Task](#task)
-1. [Specification](#specification)
+1. [Tarea](#tarea)
+1. [Especificación](#especificación)
 1. [Plan](#plan)
-1. [Implementation](#implementation)
-1. [Iterating on Files](#iterating-on-files)
-1. [Integrated Terminal](#integrated-terminal)
-1. [Session Sharing](#session-sharing)
-1. [Task Completion](#task-completion)
-1. [Session Dashboard](#session-dashboard)
+1. [Implementación](#implementación)
+1. [Iteración de archivos](#iteración-de-archivos)
+1. [Terminal integrada](#terminal-integrada)
+1. [Compartir sesión](#compartir-sesión)
+1. [Finalización de tarea](#finalización-de-tarea)
+1. [Panel de sesión](#panel-de-sesión)
 
-## Task
+## Tarea
 
-Everything in Copilot Workspace begins with a “task”, which is a natural language description of intent. The task always has a context: a GitHub repository.
-For this technical preview, Copilot Workspace supports four types of tasks: solving issues, [refining pull requests](pull-request-tasks.md), [creating repositories from templates](creating-repos.md) and [ad-hoc tasks](adhoc-tasks.md). Here we focus on solving issues, which are the most common entry point.
+Todo en Copilot Workspace comienza con una "tarea", que es una descripción en lenguaje natural de la intención. La tarea siempre tiene un contexto: un repositorio de GitHub.
+Para esta vista previa técnica, Copilot Workspace admite cuatro tipos de tareas: resolver problemas, [refinar solicitudes de extracción](pull-request-tasks.md), [crear repositorios a partir de plantillas](creating-repos.md) y [tareas ad hoc](adhoc-tasks.md). Aquí nos enfocamos en resolver problemas, que son el punto de entrada más común.
 
-Once enrolled in the technical preview, then on every issue in GitHub you will find a new "Open in Workspace" button:
+Una vez inscrito en la vista previa técnica, en cada problema de GitHub encontrarás un nuevo botón "Abrir en Workspace":
 
-<img src="images/general/open-in-workspace.png" width=400 alt="Button on issue page to open in Copilot Workspace">
+<img src="images/general/open-in-workspace.png" width=400 alt="Botón en la página del problema para abrir en Copilot Workspace">
 
-*Open an issue in Copilot Workspace*
+*Abre un problema en Copilot Workspace*
 
-This will open Copilot Workspace contextualized to this issue. For issue tasks, the task is based in the title and body of the issue, plus the issue’s comment thread. Copilot Workspace will immediately progress to the next step in the timeline. This looks like this:
+Esto abrirá Copilot Workspace contextualizado a este problema. Para las tareas de problema, la tarea se basa en el título y el cuerpo del problema, además del hilo de comentarios del problema. Copilot Workspace avanzará inmediatamente al siguiente paso en la línea de tiempo. Esto se ve así:
 
-<img src="images/overview/issue-timeline-representation.png" width=600 alt="Issue task timeline representation">
+<img src="images/overview/issue-timeline-representation.png" width=600 alt="Representación de la línea de tiempo de la tarea del problema">
 
-*The task is labeled as “Issue” and analysis begins*
+*La tarea está etiquetada como "Problema" y comienza el análisis*
 
-## Specification
+## Especificación
 
-In order to help summarize a non-trivial task definition (e.g. an issue with a long comment thread), Copilot Workspace first generates a “topic” for the task, which takes the form of a question that can be posed against the codebase, and used to define the before/after success criteria (see the [specification](#specification) section below). 
+Para ayudar a resumir una definición de tarea no trivial (por ejemplo, un problema con un hilo de comentarios largo), Copilot Workspace primero genera un "tema" para la tarea, que toma la forma de una pregunta que se puede plantear contra el código base y se utiliza para definir los criterios de éxito antes/después (ver la sección de [especificación](#especificación) a continuación).
+<img src="images/overview/topic-question.png" width=600 alt="Pregunta del tema">
 
-<img src="images/overview/topic-question.png" width=600 alt="Topic question">
+*Observa cómo el tema introduce claridad que está completamente ausente en el título del problema*
 
-*Note how the topic introduces clarity that is completely missing from the issue title*
+Puedes pensar en el tema como una forma de destilar la tarea a su esencia y darte la oportunidad temprana y rápida de ver si Copilot Workspace va por buen camino. Si el tema es incorrecto, no necesitas continuar. Pero si el tema es correcto, te ayuda a comprender mejor la tarea y a centrarte en los aspectos más importantes del código que son relevantes para la tarea.
 
-You can think of the topic as a way to distill the task down to its essence, and to give you an early and fast opportunity to see if Copilot Workspace is on the right track. If the topic is wrong, you don't need to continue. But if the topic is right, it helps you better understand the task, and to focus on the most important aspects of the codebase that are relevant to the task.
+Después de producir el tema, Copilot Workspace genera una lista con viñetas que describe el comportamiento actual del código, basado en la tarea y el tema planteados. Esto ayuda a aumentar tu confianza de que Copilot Workspace va por buen camino y sirve como una forma de incorporarte al contexto, en casos en los que es posible que no comprendas completamente el estado actual.
 
-After producing the topic, Copilot Workspace generates a bulleted list describing the current behavior of the codebase, based on the task and topic being posed. This helps build your confidence that Copilot Workspace is on the right track, and serves as a means of onboarding you to the context, in cases where you might not fully understand the current state.
+<img src="images/overview/current-spec.png" width=600 alt="Especificación actual">
 
-<img src="images/overview/current-spec.png" width=600 alt="Current specification">
+*La especificación actual responde a la pregunta del tema basada en el estado actual*
 
-*The current specification answers the question in the topic based on the current state*
+Y si Copilot Workspace se equivoca en algo, puedes editar o eliminar pasos de la especificación actual, o incluso elegir generar una especificación completamente nueva ("intentar de nuevo"). En la práctica, encontramos que suelen ser bastante buenas en el primer intento.
+Después de la especificación actual, Copilot Workspace genera una "especificación propuesta", que es una lista con viñetas que articula el estado en el que estaría el código después de resolver la tarea (respondiendo efectivamente a la pregunta del tema). Y en particular, la especificación propuesta se centra en definir los criterios de éxito de la tarea, en lugar de entrar en detalles de implementación (que es el papel del [plan](#plan)).
 
-And if Copilot Workspace gets anything wrong, then you can easily edit/delete steps from the current spec, or even choose to regenerate an entirely new spec (“try again”). In practice, we find that these tend to be pretty good on the first try.
+<img src="images/overview/proposed-spec.png" width=600 alt="Especificación propuesta">
 
-After the current specification, Copilot Workspace generates a “proposed specification”, which is a bulleted list which articulates the state that the codebase would be in after resolving the task (effectively answering the question in the topic). And in particular, the proposed specification is focused on defining the success criteria of the task, as opposed to getting into implementation details (which is the role of the [plan](#plan)).
+*La especificación propuesta indica cómo editar el código para resolver la tarea*
 
-<img src="images/overview/proposed-spec.png" width=600 alt="Proposed specification">
+## Selección de contenido
 
-*The proposed specification indicates how to edit the codebase in order to solve the task*
+Para generar las especificaciones actuales y propuestas, y para todos los pasos posteriores, Copilot Workspace necesita identificar qué archivos en el código son relevantes para comprender y completar la tarea. Esto se logra mediante una combinación de técnicas de LLM y búsqueda de código tradicional. El contenido de los archivos con mayor ranking se utiliza como contexto para casi todos los pasos en el flujo de trabajo.
 
-## Content Selection
+Los usuarios pueden revisar los archivos seleccionados por Copilot Workspace utilizando el botón "Ver Referencias" en el panel de Especificaciones. Para ajustar qué archivos se seleccionan, los usuarios pueden editar la tarea y utilizar lenguaje natural para especificar qué archivos son relevantes.
 
-To generate the current and proposed specifications, and for all following steps, Copilot Workspace needs to identify which files in the codebase are relevant to understanding and completing the task. It does this by a combination of LLM techniques and traditional code search. The contents of the highest-ranked files are then used as context for nearly all steps in the workflow.
+<img src="images/overview/references.png" width=600 alt="Mostrar cuadro de diálogo de referencias">
 
-Users may review the files selected by Copilot Workspace using the "View references" button in the Specification panel. To adjust which files are selected, users can edit the task and use natural language to specify which files are relevant.
-
-<img src="images/overview/references.png" width=600 alt="Show references dialog">
-
-*The references that the model used to generate the original and modified specifications*
+*Las referencias que el modelo utilizó para generar las especificaciones originales y modificadas*
 
 ## Plan
 
-Once you are happy with the current and proposed specs, you can request Copilot Workspace to generate a plan, which is a list of the files that need to be modified (e.g. edited, created, deleted, moved, or renamed) in order to accomplish the success criteria of the proposed spec. Additionally, each changed file includes a list of specific steps that indicate the exact changes that need to be made.
+Una vez que estés satisfecho con las especificaciones actuales y propuestas, puedes solicitar a Copilot Workspace que genere un plan, que es una lista de los archivos que deben modificarse (por ejemplo, editarse, crearse, eliminarse, moverse o renombrarse) para lograr los criterios de éxito de la especificación propuesta. Además, cada archivo modificado incluye una lista de pasos específicos que indican los cambios exactos que deben realizarse.
 
-Like the spec, the plan is fully editable and regeneratable, which allows you to refine and steer Copilot Workspace in the right direction.
+Al igual que la especificación, el plan es completamente editable y se puede regenerar, lo que te permite refinar y guiar a Copilot Workspace en la dirección correcta.
 
 <img src="images/overview/plan.png" width=600 alt="Plan">
 
-*A plan, showing the steps needed to edit one file and add a second one*
+*Un plan que muestra los pasos necesarios para editar un archivo y agregar otro*
 
-## Implementation
+## Implementación
 
-When you are happy with the plan, you can click the “Implement” button in order to begin implementing it. This will update the UI to display a series of queued file updates on the right side, and then begin generating the updated file contents one-by-one. When a file begins generating, its associated entry in the plan will show it as being in progress. And when it completes, the plan will indicate it as being done.
+Cuando estés satisfecho con el plan, puedes hacer clic en el botón "Implementar" para comenzar a implementarlo. Esto actualizará la interfaz de usuario para mostrar una serie de actualizaciones de archivos en cola en el lado derecho, y luego comenzará a generar el contenido actualizado de los archivos uno por uno. Cuando un archivo comienza a generarse, su entrada asociada en el plan mostrará que está en progreso. Y cuando se completa, el plan indicará que está terminado.
 
-Once a file is implemented, Copilot Workspace renders a diff view for it, and automatically scrolls to the first change. The diff editors are editable, which allows making minor tweaks directly to the code, as opposed to iterating via changes to the task, spec, or plan.
+Una vez que se implementa un archivo, Copilot Workspace muestra una vista de diferencias para él y se desplaza automáticamente al primer cambio. Los editores de diferencias son editables, lo que permite realizar ajustes menores directamente en el código, en lugar de iterar a través de cambios en la tarea, especificación o plan.
 
-## Iterating on Files
+## Iteración de archivos
 
-Copilot Workspace doesn't always get everything right, and so it makes it easy for users to iterate on the implementations file by file. Simply add, remove, edit the items in the plan steps for each file, select the checkbox, and click the "Update selected files" button. This will re-generate the contents of the selected files and update the diff view.
+Copilot Workspace no siempre acierta en todo, por lo que facilita a los usuarios iterar en los archivos de implementación uno por uno. Simplemente agrega, elimina o edita elementos en los pasos del plan para cada archivo, marca la casilla de verificación y haz clic en el botón "Actualizar archivos seleccionados". Esto regenerará el contenido de los archivos seleccionados y actualizará la vista de diferencias.
 
-For example, you can edit the diff directly, or you can go back to the plan and make changes there. And if you need to make more extensive changes, you can regenerate the plan entirely.
+Por ejemplo, puedes editar directamente la diferencia, o puedes volver al plan y hacer cambios allí. Y si necesitas hacer cambios más extensos, puedes regenerar completamente el plan.
 
-<img src="images/overview/file-iteration.png" width=600 alt="Plan panel with file iteration">
+<img src="images/overview/file-iteration.png" width=600 alt="Panel de plan con iteración de archivos">
 
-*The plan panel enables users to iterate on implementation file by file*
+*El panel de plan permite a los usuarios iterar en la implementación archivo por archivo*
 
-## Integrated Terminal
+## Terminal integrada
 
-Once you have implemented the plan, Copilot Workspace enables you to validate the changes for correctness by bringing up an integrated terminal and executing shell commands. This allows performing a build, lint, test, etc. against the changes, and can be a quick and effective way to gain confidence about the task and its completion status. The terminal is backed by a Codespace, so it is a secure sandbox with a full development environment installed. 
+Una vez que hayas implementado el plan, Copilot Workspace te permite validar los cambios para verificar su corrección mediante la apertura de una terminal integrada y la ejecución de comandos de shell. Esto permite compilar, analizar, probar, etc. los cambios, y puede ser una forma rápida y efectiva de ganar confianza sobre la tarea y su estado de finalización. La terminal está respaldada por un Codespace, por lo que es un entorno de desarrollo seguro con un entorno de desarrollo completo instalado.
 
-<img src="images/overview/terminal.png" width=600 alt="Integrated terminal">
+<img src="images/overview/terminal.png" width=600 alt="Terminal integrada">
 
-*Integrated terminal, showing the generated branch name and access to just-in-time compute*
+*Terminal integrada, mostrando el nombre de la rama generada y acceso a la informática justo a tiempo*
 
-If you want to make any more extensive changes or leverage rich editor features (e.g. step debugging), you can open the Copilot Workspace session in a Codespace, using any of Codespace’s supported clients.
+Si necesitas hacer cambios más extensos o aprovechar las funciones avanzadas del editor (por ejemplo, depuración paso a paso), puedes abrir la sesión de Copilot Workspace en un Codespace, utilizando cualquiera de los clientes admitidos por Codespace.
 
-## Session Sharing
+## Compartir sesión
 
-In order to make it easy to share a workspace session with others (e.g. for doing an ad-hoc code review or sharing an initial implementation idea), Copilot Workspace allows users to generate shared links. These links can be shared with guests, even if they are not part of the Copilot Workspace preview.
+Para facilitar el uso compartido de una sesión de espacio de trabajo con otros (por ejemplo, para revisar el código de forma ad hoc o compartir una idea de implementación inicial), Copilot Workspace permite a los usuarios generar enlaces compartidos. Estos enlaces se pueden compartir con invitados, incluso si no forman parte de la vista previa de Copilot Workspace.
 
-Shared sessions are copies of the original session. Non-guest users can use them as a starting point to continue the task or explore alternative solutions without interfering with the original session. Guest users can view the session but cannot use the workspace to make changes.
+Las sesiones compartidas son copias de la sesión original. Los usuarios no invitados pueden utilizarlas como punto de partida para continuar la tarea o explorar soluciones alternativas sin interferir con la sesión original. Los usuarios invitados pueden ver la sesión pero no pueden realizar cambios en el espacio de trabajo.
 
-<img src="images/overview/share-link.png" width=600 alt="Generating a share link">
+<img src="images/overview/share-link.png" width=600 alt="Generar un enlace compartido">
 
-*Generating a share link from the header bar*
+*Generando un enlace compartido desde la barra de encabezado*
 
-When working with issues and pull requests, you can also
+Cuando trabajas con problemas y solicitudes de extracción, también puedes:
 
-* Publish to issue comment. Copilot Workspace automatically generates a comment with a share link for the session, which is included in the issue. This allows reviewers to quickly access the workspace session and see the proposed changes.
+* Publicar un comentario en un problema. Copilot Workspace genera automáticamente un comentario con un enlace compartido a la sesión, que se incluye en el problema. Esto permite a los revisores acceder rápidamente a la sesión del espacio de trabajo y ver los cambios propuestos.
 
-* Publish to pull request comment. Similar to the issue comment, Copilot Workspace automatically generates a comment with a share link for the session, which is included in the pull request. This allows reviewers to quickly access the workspace session and see the proposed changes.
+* Publicar un comentario en una solicitud de extracción. Similar al comentario del problema, Copilot Workspace genera automáticamente un comentario con un enlace compartido a la sesión, que se incluye en la solicitud de extracción. Esto permite a los revisores acceder rápidamente a la sesión del espacio de trabajo y ver los cambios propuestos.
 
-## Task Completion
+## Finalización de la tarea
 
-When a task is implemented, validated, and reviewed, you can complete the task in different ways, depending on the type of task you’re working on.
+Cuando una tarea se implementa, valida y revisa, puedes completar la tarea de diferentes formas, según el tipo de tarea en la que estés trabajando.
 
-<img src="images/overview/task-completion.png" width=600 alt="Creating a pull request">
+<img src="images/overview/task-completion.png" width=600 alt="Crear una solicitud de extracción">
 
-*Creating a pull request for the implemented changes*
+*Creando una solicitud de extracción para los cambios implementados*
 
-| Task type | Available completions | 
-|-----------| -------------------- |
-| Issue | — Create pull request <br> — Create draft pull request <br> — Push to new branch <br> — Push changes to current branch (only available if you have commit permissions to the repo) <br> <br> These may fork the repository if you do not have write access |
-| Ad-hoc task | — *As for issues* |
-| PR task | — Update pull request (pushes a new commit with the changes) <br> — *As for issues* |
-| Repo task | — Create repository (creates a new repo from the selected template repo, and includes the changes) |
+| Tipo de tarea | Completaciones disponibles | 
+|---------------| ------------------------ |
+| Problema | — Crear solicitud de extracción <br> — Crear solicitud de extracción en borrador <br> — Hacer push a una nueva rama <br> — Hacer cambios en la rama actual (solo disponible si tienes permisos de confirmación en el repositorio) <br> <br> Estas acciones pueden bifurcar el repositorio si no tienes permisos de escritura |
+| Tarea ad hoc | — *Igual que para problemas* |
+| Tarea de solicitud de extracción | — Actualizar solicitud de extracción (hace un nuevo commit con los cambios) <br> — *Igual que para problemas* |
+| Tarea de repositorio | — Crear repositorio (crea un nuevo repositorio a partir del repositorio de plantilla seleccionado e incluye los cambios) |
 
-## Session Dashboard
+## Panel de sesión
 
-Copilot Workspace automatically saves your work. It also provides a session dashboard, which allows you to easily resume your work later. You can start a task from your phone and then finish up on your laptop, or vice versa.
+Copilot Workspace guarda automáticamente tu trabajo. También proporciona un panel de sesión, que te permite reanudar fácilmente tu trabajo más tarde. Puedes comenzar una tarea desde tu teléfono y luego terminarla en tu computadora portátil, o viceversa.
 
-<img src="images/general/dashboard.png" width=600 alt="Copilot Workspace dashboard">
+<img src="images/general/dashboard.png" width=600 alt="Panel de Copilot Workspace">
 
-*The Copilot Workspace dashboard showing recent, bookmarked and completed sessions*
+*El panel de Copilot Workspace muestra sesiones recientes, marcadas y completadas*
 
-Undo and redo are supported within the session via buttons on the toolbar.
+La funcionalidad de deshacer y rehacer es compatible dentro de la sesión a través de botones en la barra de herramientas.
 
-## Appendix: Glossary
+## Apéndice: Glosario
 
-| Term | Definition |
-|------|------------|
-| Copilot Workspace | A Copilot-native dev environment that’s designed for exploring and completing every day tasks  |
-| Target | A branch of a codebase at a specific commit | 
-| Task | A natural language description of a change to a target | 
-| Topic | A brief single-sentence summary of a task, usually in question form |
-| Specification | A description of the current and proposed state of the target as it relates to the task |
-| Plan | A list of files to add, remove or change, with notes about each of them, that together transform the target from its current state to its proposed state |
-| Implementation | A set of changes to the target that, when applied, will complete the task |
-| Session | A user’s saved progress towards completing a task, a single task can have many sessions |
-| Snapshot session | A snapshot of a user’s session, created when you click “Share link”, including both the task progress and UX state |
+| Término | Definición |
+|---------|------------|
+| Copilot Workspace | Un entorno de desarrollo nativo de Copilot diseñado para explorar y completar tareas diarias |
+| Objetivo | Una rama de código en un commit específico |
+| Tarea | Una descripción en lenguaje natural de un cambio en un objetivo |
+| Tema | Una breve frase de resumen de una tarea, generalmente en forma de pregunta |
+| Especificación | Una descripción del estado actual y propuesto del objetivo en relación con la tarea |
+| Plan | Una lista de archivos para agregar, eliminar o cambiar, con notas sobre cada uno de ellos, que juntos transforman el objetivo desde su estado actual a su estado propuesto |
+| Implementación | Un conjunto de cambios en el objetivo que, cuando se aplican, completan la tarea |
+| Sesión | El progreso guardado de un usuario hacia la finalización de una tarea, una sola tarea puede tener muchas sesiones |
+| Sesión de instantánea | Una instantánea de la sesión de un usuario, creada cuando haces clic en "Compartir enlace", que incluye tanto el progreso de la tarea como el estado de la interfaz de usuario |

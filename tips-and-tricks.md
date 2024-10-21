@@ -1,179 +1,165 @@
-# Tips and Tricks
+# Consejos y Trucos
 
-This document contains assorted tips and tricks for using Copilot Workspace effectively. We'd love to hear your tips and tricks, too! Please share them with us in [feedback channels](README.md#feedback).
+Este documento contiene varios consejos y trucos para utilizar Copilot Workspace de manera efectiva. ¡Nos encantaría conocer tus consejos y trucos también! Por favor, compártelos con nosotros en los [canales de retroalimentación](LEEME.md#feedback).
 
-## Edit the Issue or Task
+## Edita el Problema o Tarea
 
-✨ TIP: You can edit the issue or task to guide Copilot Workspace.
+✨ CONSEJO: Puedes editar el problema o tarea para guiar a Copilot Workspace.
 
-The Issue/Task panel may be prepopulated with content depending on how you entered Copilot Workspace. For example, if you started from an Issue, the Issue panel will be prepopulated with the content of the issue. This content is ephemeral -- edits aren't synced back to the issue -- and so feel free to edit it to provide more context or to steer Copilot Workspace towards better results.
+El panel de Problema/Tarea puede estar prellenado con contenido dependiendo de cómo ingresaste a Copilot Workspace. Por ejemplo, si comenzaste desde un Problema, el panel de Problema estará prellenado con el contenido del problema. Este contenido es efímero: las ediciones no se sincronizan de vuelta al problema, por lo que siéntete libre de editarlo para proporcionar más contexto o dirigir a Copilot Workspace hacia mejores resultados.
 
-## Tasks can be short!
+## ¡Las tareas pueden ser cortas!
 
-✨ TIP: You might be surprised at the effectiveness of simple tasks like "Add unit tests"
+✨ CONSEJO: Podrías sorprenderte de la efectividad de tareas simples como "Agregar pruebas unitarias"
 
-Tasks don't have to be long. Simple, clear statements of intent like "Switch to use Python numpy" or "Add more unit tests for the server code" can get you a long way. You can easily add more clarification and iterate.
+Las tareas no tienen que ser largas. Declaraciones simples y claras de intención como "Cambiar a usar Python numpy" o "Agregar más pruebas unitarias para el código del servidor" pueden llevarte muy lejos. Puedes agregar fácilmente más aclaraciones e iterar.
 
-## Clarify the Issue or Task
+## Aclara el Problema o Tarea
 
-✨ TIP: A few words clarifications can make a huge difference!
+✨ CONSEJO: ¡Unas pocas palabras de aclaración pueden marcar una gran diferencia!
 
-Just a few words of clarification can make a big difference in the quality of the results you get. For example,
+Solo unas pocas palabras de aclaración pueden marcar una gran diferencia en la calidad de los resultados que obtienes. Por ejemplo,
 
-* _add corresponding unit tests in `test/server`_ or
+* _agregar pruebas unitarias correspondientes en `test/server`_ o
 
-* _the problem is in the convolution code_ or
+* _el problema está en el código de convolución_ o
 
-* _don't change any existing code just add unit tests_
+* _no cambies ningún código existente, solo agrega pruebas unitarias_
 
-are examples of useful clarifications. Use as many of these as you like!
+son ejemplos de aclaraciones útiles. ¡Utiliza tantas de estas como desees!
 
-## Consider using Examples
+## Considera utilizar Ejemplos
 
-✨ TIP: Giving examples of what you want can be a great way to clarify a task
+✨ CONSEJO: Dar ejemplos de lo que deseas puede ser una excelente manera de aclarar una tarea
 
-For example, you can say: _Here are some examples of command line invocations that should work after the change..._ and give a few examples. Or you can say: _Here are some examples of the expected output..._ and give a few examples.
+Por ejemplo, puedes decir: _Aquí hay algunos ejemplos de invocaciones de línea de comandos que deberían funcionar después del cambio..._ y dar algunos ejemplos. O puedes decir: _Aquí hay algunos ejemplos de la salida esperada..._ y dar algunos ejemplos.
 
-## Check the Topic and Specification
+## Verifica el Tema y la Especificación
 
-✨ TIP: Check the topic and specification - if they're accurate, then Copilot Workspace is on the right track
+✨ CONSEJO: Verifica el tema y la especificación: si son precisos, entonces Copilot Workspace va por buen camino
 
-The Topic is your first quick glimpse of Copilot Workspace's analysis of your task in the context of your repository, and the Current Specification follows soon after, then the Updated Specification. If these are accurate, then Copilot Workspace is on the right track. If they're not, then you may need to provide more context, clarifications and hints in the Issue/Task panel, or you may be performing something beyond Copilot Workspace's current capabilities.
+El Tema es tu primer vistazo rápido al análisis de Copilot Workspace de tu tarea en el contexto de tu repositorio, y la Especificación Actual sigue poco después, luego la Especificación Actualizada. Si estas son precisas, entonces Copilot Workspace va por buen camino. Si no lo son, es posible que necesites proporcionar más contexto, aclaraciones e indicaciones en el panel de Problema/Tarea, o es posible que estés realizando algo más allá de las capacidades actuales de Copilot Workspace. Puedes editar todos estos para corregirlos y revisarlos rápidamente, lo cual puede ahorrarte mucho tiempo. También puedes retroceder y aclarar el problema o tarea y volver a intentarlo.
 
-You can edit all of these to correct them, and checking them quickly can save you a lot of time. You can also go back and clarify the issue or task and try again.
+## Verificar la selección de contenido
 
-## Check the Content Selection
+✨ CONSEJO: Verifica la selección de contenido y utiliza notas breves en el problema o tarea para indicar dónde buscar
 
-✨ TIP: Check the content selection and use short notes in the issue or task to say where to look
+Puedes [verificar la selección de contenido utilizada](overview.md#content-selection). A menudo, la selección de contenido se puede mejorar y ahora mismo puedes hacerlo a través de lenguaje natural y notas en el panel de problema/tarea. Si sabes dónde está el código que necesita ser cambiado, puedes indicarlo en el panel de problema/tarea. Por ejemplo, puedes decir: _Mira en `src/server.js`_ u otras variaciones.
 
-You can [check the content selection used](overview.md#content-selection). Often the content selection can be improved, and right now you do this through natural language and notes on the issue/task. If you know where the code that needs to be changed is, you can say so in the issue/task panel. For example, you can say: _Look in `src/server.js`_ or many other variations.
+Para determinar cómo abordar una tarea, Copilot Workspace debe determinar qué archivos en un repositorio son relevantes para la tarea. Esto es difícil y Copilot Workspace no siempre seleccionará los archivos correctos. Si eso sucede, es posible que veas resultados de baja calidad.
 
-To determine how to address a task, Copilot Workspace must determine which files in a repo are relevant to the task. This is hard, and Copilot Workspace may not always select the right files. If that happens, you may see low-quality results.
+Para revisar los archivos que se seleccionaron, en el panel de Especificación, haz clic en el botón "Ver referencias":
 
-To review the files that were selected, in the Specification panel, click the "View references" button:
+<img src="images/overview/references.png" width=600 alt="Mostrar cuadro de diálogo de referencias">
 
-<img src="images/overview/references.png" width=600 alt="Show references dialog">
+Para guiar a Copilot Workspace hacia una mejor selección de archivos, puedes mencionar nombres de archivos, nombres de directorios, etc. en el panel de problema/tarea. Solo escríbelo de forma natural, como si estuvieras escribiendo un problema normal.
 
-To steer Copilot Workspace towards better file selection, you can mention file names, directory names, etc. in the issue/task panel. Just write it naturally, as if you were writing a normal issue.
+## Si al principio no tienes éxito...
 
-## If at First You Don't Succeed...
+✨ CONSEJO: Intenta regenerar la especificación o el plan
 
-✨ TIP: Try regenerating the spec or plan
+Si no estás satisfecho con los resultados que estás obteniendo, puedes intentar regenerar la especificación y/o el plan. Para hacer esto, haz clic en el botón "Regenerate" en los paneles de Especificación o Plan:
 
-If you're not happy with the results you're getting, you can try regenerating the spec and/or plan. To do this, click the "Regenerate" button in the Spec or Plan panels:
+<img src="images/tips-and-tricks/regen.png" width=600 alt="Botón Regenerate">
 
-<img src="images/tips-and-tricks/regen.png" width=600 alt="Regenerate button">
+## Iterar en la implementación
 
-## Iterating on the Implementation
+✨ CONSEJO: Agrega notas breves a los archivos en el plan, luego itera
 
-✨ TIP: Add short notes to files in the plan, then iterate
+A menudo, Copilot Workspace obtendrá una tarea *casi correcta*, pero puede tener problemas con algunas partes. En este caso, puedes reimplementar archivos específicos con instrucciones nuevas o adicionales. Después de implementar y revisar el código, puedes seleccionar archivo(s) en el panel de Plan y agregar viñetas, luego hacer clic en "Update selected files" para reimplementar esos archivo(s) con las nuevas instrucciones que has proporcionado.
 
-Often Copilot Workspace will get a task *mostly right*, but may have trouble with some parts. In this case, you can reimplement specific files with new or additional instructions. After implementing and reviewing the code, you can select file(s) in the Plan panel and add bullet points, then click "Update selected files" to reimplement those file(s) with the new instructions that you've provided.
+<img src="images/overview/file-iteration.png" width=600 alt="Flujo de actualización de archivos seleccionados">
 
-<img src="images/overview/file-iteration.png" width=600 alt="Update selected files flow">
+## Agregar nuevos archivos e iterar
 
-## Add New Files and Iterate
+✨ CONSEJO: Puedes agregar nuevos archivos e iterar en la implementación
 
-✨ TIP: You can add new files and iterate on the implementation
+Si necesitas agregar nuevos archivos a la implementación, puedes hacerlo haciendo clic en el botón "Add file" en el panel de Plan. Esto agregará un nuevo archivo al plan, que luego puedes implementar e iterar.
 
-If you need to add new files to the implementation, you can do so by clicking the "Add file" button in the Plan panel. This will add a new file to the plan, which you can then implement and iterate on.
+## Considera generar nuevos archivos
 
-## Consider Generating New Files
+✨ CONSEJO: Generar nuevos archivos puede ser mejor que agregar a archivos existentes
 
-✨ TIP: Generating new files can be better than appending to existing files
+Esta vista previa técnica de Copilot Workspace utiliza "rewriting de archivo completo". Esto significa que cuando le pides a Copilot Workspace que agregue código a un archivo, reemplazará todo el archivo con el nuevo código. Al realizar tareas como escribir pruebas unitarias o generar documentación o código de implementación nuevo, puede ser más fácil y rápido generar nuevos archivos y luego renombrarlos.
 
-This technical preview of Copilot Workspace uses "whole file rewriting". This means that when you ask Copilot Workspace to add code to a file, it will replace the entire file with the new code. When performing tasks like writing unit tests or generating documentation or new implementation code, it can be easier and quicker to generate new files, then rename them.
+## Comparte temprano, comparte a menudo
 
-## Share Early, Share Often
+✨ CONSEJO: Puedes compartir tu sesión en cualquier momento, incluso con personas que no forman parte de la vista previa de Copilot Workspace.
 
-✨ TIP: You can share your session at any time, including with people who are not part of the Copilot Workspace preview.
+Puedes compartir tu sesión de Copilot Workspace con otras personas haciendo clic en el botón "Share" en la esquina superior derecha de la pantalla. Esto generará un enlace que puedes compartir con otros. Estos enlaces se pueden compartir con invitados, incluso si no forman parte de la vista previa de Copilot Workspace. Deberán iniciar sesión con su cuenta de GitHub para ver la sesión.
 
-You can share your Copilot Workspace session with others by clicking the "Share" button in the top right corner of the screen. This will generate a link that you can share with others. These links can be shared with guests, even if they are not part of the Copilot Workspace preview. They will need to log in with their GitHub account to view the session.
+Las sesiones compartidas son copias de la sesión original. Los usuarios que no sean invitados pueden usarlas como punto de partida para continuar la tarea o explorar soluciones alternativas sin interferir con la sesión original. Los usuarios invitados pueden ver la sesión pero no pueden usar el espacio de trabajo para realizar cambios.
 
-Shared sessions are copies of the original session. Non-guest users can use them as a starting point to continue the task or explore alternative solutions without interfering with the original session. Guest users can view the session but cannot use the workspace to make changes.
+<img src="images/overview/share-link.png" width=200 alt="Botón Share">
 
-<img src="images/overview/share-link.png" width=200 alt="Share button">
+## Utiliza las sesiones
 
-## Use the Sessions
+✨ CONSEJO: Vuelve a tu trabajo en cualquier momento
 
-✨ TIP: Return to your work at any time
+Tus sesiones se guardan automáticamente, por lo que no perderás el trabajo si cierras el navegador o te alejas de la página. Puedes volver a tu sesión yendo a [tu panel de Copilot Workspace](https://copilot-workspace.githubnext.com).
 
-Your sessions are automatically saved, so you won't lose work if you close the browser or navigate away from the page. You can return to your session by going to [your Copilot Workspace dashboard](https://copilot-workspace.githubnext.com).
+## Configura la terminal para tu repositorio
 
-## Configure the Terminal for Your Repository
+✨ CONSEJO: Configura un archivo `devcontainer.json` en tu repositorio para configurar la terminal
 
-✨ TIP: Set up a `devcontainer.json` file in your repository to configure the terminal
+Proporcionamos una terminal incorporada para que puedas validar los cambios de código que Copilot Workspace sugiere. Utilizamos GitHub Codespaces para proporcionar esta terminal y usamos el archivo `devcontainer.json` en tu repositorio para configurar el contenedor que alimenta la terminal. Si necesitas hacer cambios en el contenedor predeterminado, como instalar software necesario, etc., puedes hacerlo creando un archivo `devcontainer.json` en tu repositorio. Obtén más información sobre los contenedores de desarrollo en https://containers.dev/.
 
-We provide a built-in terminal so that you can validate the code changes that Copilot Workspace suggests. We use GitHub Codespaces to provide this terminal, and we use the `devcontainer.json` file in your repository to configure the container that powers the terminal. If you need to make changes to the default container to e.g. install necessary software, etc., you can do so by creating a `devcontainer.json` file in your repository. Learn more about Development Containers at https://containers.dev/.
+## Utiliza el Codespace
 
-## Use the Codespace
+✨ CONSEJO: La edición completa en el Codespace es simple y rápida
 
-✨ TIP: Full editing in the Codespace is simple and quick
+Los archivos modificados se sincronizan en ambas direcciones entre Copilot Workspace y la terminal/Codespace. Siéntete libre de editar en cualquier lugar y los cambios se reflejarán en el otro.
 
-Modified files are two-way-synced between Copilot Workspace and the terminal/Codespace. Feel free to edit in either place, and your changes will be reflected in the other.
+Consulta [Guía de Codespaces](./codespaces-guide.md) para obtener más información.
 
-Check out [Codespaces Guide](./codespaces-guide.md) for more information.
+## ¡Explora los Experimentos!
 
-## Explore the Experiments!
+✨ CONSEJO: ¡Explora nuestros experimentos y envíanos comentarios!
 
-✨ TIP: Explore our experiments and send us feedback!
+Siempre estamos probando cosas nuevas en Copilot Workspace. Puedes optar por participar en nuestros experimentos actuales haciendo clic en tu avatar en la esquina superior derecha de la pantalla y seleccionando "Experimentos":
 
-We're always trying new things in Copilot Workspace. You can opt into our current experiments by clicking on your avatar in the top right corner of the screen and selecting "Experiments":
+<img src="images/tips-and-tricks/experiments.png" width=200 alt="Selector de Experimentos">
 
-<img src="images/tips-and-tricks/experiments.png" width=200 alt="Experiments selector">
+## Trabajar con la "pereza" del modelo
 
-## Work Around Model "Laziness"
+✨ CONSEJO: Si el modelo es "perezoso" y omite partes de los archivos editados, copia y pega las partes faltantes desde la diferencia
 
-✨ TIP: If the model is "lazy" and elides chunks of edited files, copy and paste the missing parts from the diff
+A veces, el modelo será "perezoso" y omitirá partes de los archivos editados. Si ves que esto sucede, puedes copiar las partes faltantes del lado izquierdo de la diferencia y pegarlas en el lado derecho. Sabemos que esto no es ideal y estamos trabajando arduamente en este problema.
 
-Sometimes the model will be "lazy" and elide chunks of edited files. If you see this happening, you can copy the missing parts from the left-hand side of the diff and paste them into the right-hand side.  We know that's not ideal, and we're working hard on this issue.
+## Editar código en Copilot Workspace
 
-## Edit code in Copilot Workspace
+✨ CONSEJO: Edita directamente en los editores de código por archivo en Copilot Workspace
 
-✨ TIP: Make edits directly in the code editors per file
+Cuando Copilot Workspace ha generado una sugerencia, se te presenta en el panel de implementación. ¡Pero esas sugerencias no son solo de lectura! Puedes editarlas y hacer cambios según desees.
 
-When Copilot Workspace has generated a suggestion, it is presented to you in the implementation panel. But those suggestions aren’t just read-only! You can edit them, and make changes as you desire.
+<img src="images/tips-and-tricks/code-editor.png" width=300 alt="Editar código en Copilot Workspace">
 
-<img src="images/tips-and-tricks/code-editor.png" width=300 alt="Edit code in Copilot Workspace">
+Y si tienes un GitHub Codespace abierto, ¡esas ediciones se sincronizarán entre Copilot Workspace y el GitHub Codespace también!
 
-And if you have a GitHub Codespace open, those edits will sync between Copilot Workspace and the GitHub Codespace too!
+## ¿Necesitas volver atrás?
 
-## Need to go back?
+✨ CONSEJO: Puedes usar los botones de deshacer y rehacer para viajar entre un estado anterior y más nuevo de tu espacio de trabajo.
 
-✨ TIP: You can use the undo and redo buttons to travel between an older and newer state of your workspace.
+Puedes usar los botones de deshacer y rehacer para volver a un estado anterior de tu espacio de trabajo. Esto puede incluir revertir una implementación o las adiciones y ajustes que hayas realizado en tu especificación o plan.
 
-You can use the undo and redo buttons to navigate back to a previous state of your workspace. That can include reverting an implementation, or the additions and tweaks that you may have made to your spec or plan. 
+<img src="images/tips-and-tricks/undo-redo.png" width=300 alt="Usar deshacer y rehacer para cambiar estados en Copilot Workspace">
 
-<img src="images/tips-and-tricks/undo-redo.png" width=300 alt="Use Undo and Redo to change states in Copilot Workspace">
+## ¿En movimiento? Prueba Copilot Workspace en tu móvil
 
+✨ CONSEJO: Copilot Workspace es compatible con dispositivos móviles, ¡así que considera hacer cambios sobre la marcha!
 
-## On the go? Try Copilot Workspace on Mobile
+Las ideas pueden surgir en cualquier lugar, ya sea en tu escritorio, en una cafetería o en un autobús. ¡Con esa chispa de creatividad, puedes usar Copilot Workspace desde tu móvil para explorar ideas! Y si no completaste completamente tu tarea, puedes usar el panel de control en Copilot Workspace para retomar donde lo dejaste.
 
-✨ TIP: Copilot Workspace is mobile-friendly, so consider making changes on the go!
+Y si deseas acceder fácilmente a Copilot Workspace en cualquier momento, puedes agregarlo a la pantalla de inicio de tu móvil siguiendo estos pasos:
 
-Ideas can happen anywhere, whether you’re at your desk, in a coffee shop or on a bus. With that spark of creativity, you can use Copilot Workspace from your mobile to explore ideas! And if you didn’t fully complete your task, you can use the dashboard in Copilot Workspace to pick up where you left off.
+1. Abre tu navegador móvil y ve al panel de control de Copilot Workspace en [https://copilot-workspace.githubnext.com](https://copilot-workspace.githubnext.com).
+2. Una vez que se cargue el panel de control, toca el menú del navegador y selecciona "Agregar a la pantalla de inicio" para acceder fácilmente a Copilot Workspace desde tu pantalla de inicio.
+3. Confirma la acción si se te solicita y Copilot Workspace se agregará a tu pantalla de inicio, brindando una experiencia similar a una aplicación nativa gracias al soporte de PWA.
 
-And if you'd like to easily access Copilot Workspace at any time, you can add it to your mobile homescreen by performing the following steps:
+## Recuperar el acceso si revocaste OAuth
 
-1. Open your mobile browser and navigate to the Copilot Workspace dashboard at [https://copilot-workspace.githubnext.com](https://copilot-workspace.githubnext.com).
-2. Once the dashboard loads, tap on the browser's menu and select "Add to Home screen" to easily access Copilot Workspace from your home screen.
-3. Confirm the action if prompted, and Copilot Workspace will be added to your home screen, providing a native app-like experience thanks to PWA support.
+Copilot Workspace se implementa como una aplicación OAuth. Si revocaste la autorización de la aplicación en la configuración de tu cuenta de GitHub, ya no podrás usar Workspace. Puedes restaurar tu acceso en https://copilot-workspace.githubnext.com/ cerrando sesión, luego iniciando sesión y volviendo a autorizar la aplicación OAuth.
 
-## Regaining access if you revoked OAuth
+## Enlaces entrantes
 
-Copilot Workspace is implemented as an OAuth application. If you revoked authorization for the application in your GitHub account settings, you'll no longer be able to use Workspace. You can restore your access at https://copilot-workspace.githubnext.com/ by logging out, then logging in and re-authorizing the OAuth app.
-
-## Incoming Links
-
-✨ TIP: Copilot Workspace has a capability for the task to be specified by query parameters when the subject is a repository, branch or pull request. 
-
-```
-https://copilot-workspace.githubnext.com/githubnext/copilot-workspace/pull/695?task=Add%20more%20unit%20tests%20to%20this%20pull%20request.```
-```
-
-The query parameters supported are
-
-- `task` - The description of the task. If not specified, and the subject is an issue, the body of the issue is used, otherwise no task body is used and the user must enter one.
-- `codeOwner` - The organization or individual for the code repository associated with an issue, e.g. `githubnext` for `githubnext/copilot-workspace`
-- `codeRepo` - The name of the code repository associated with an issue, e.g. `copilot-workspace` for `githubnext/copilot-workspace`
-- `branch` - The SHA or branch name to analyze the task at, e.g. `main`
+✨ CONSEJO: Copilot Workspace tiene la capacidad de especificar la tarea mediante parámetros de consulta cuando el tema es un repositorio, una rama o una solicitud de extracción.

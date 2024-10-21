@@ -1,39 +1,39 @@
-# Experiments
+# Experimentos
 
-Copilot Workspace is a technical preview and is under active development. This document lists some known issues and known areas where we'd like to make future improvements.
+Copilot Workspace es una vista previa técnica y está en desarrollo activo. Este documento enumera algunos problemas conocidos y áreas conocidas en las que nos gustaría realizar mejoras en el futuro.
 
-We will be doing ongoing continuous releases of Copilot Workspace during the technical preview, adding new features, new experiments and fixing bugs as we go. 
+Realizaremos lanzamientos continuos en curso de Copilot Workspace durante la vista previa técnica, agregando nuevas características, nuevos experimentos y solucionando errores a medida que avanzamos.
 
-We greatly appreciate any [feedback](https://github.com/githubnext/copilot-workspace-user-manual?tab=readme-ov-file#feedback) on these experiments, as it helps us improve Copilot Workspace and make it more useful for you.
+Apreciamos enormemente cualquier [comentario](https://github.com/githubnext/copilot-workspace-user-manual?tab=readme-ov-file#feedback) sobre estos experimentos, ya que nos ayuda a mejorar Copilot Workspace y hacerlo más útil para usted.
 
-## Active experiments
+## Experimentos activos
 
-There are several active "Experiments" available related to things we are working on. We invite you to activate these and will update this document with new experiments when they are available. These features aren't set in stone, and any feedback regarding them would be greatly appreciated.
+Hay varios "Experimentos" activos disponibles relacionados con las cosas en las que estamos trabajando. Le invitamos a activarlos y actualizaremos este documento con nuevos experimentos cuando estén disponibles. Estas características no están definidas y agradecemos cualquier comentario al respecto.
 
-### Use line numbers always (🥼)
+### Utilizar siempre números de línea (🥼)
 
-We are experimenting with a feature that allows Copilot Workspace to always use line numbers when generating code. Enable this using the "Use line numbers always" feature in Copilot Workspace.
+Estamos experimentando con una función que permite que Copilot Workspace siempre utilice números de línea al generar código. Habilita esto utilizando la función "Utilizar siempre números de línea" en Copilot Workspace.
 
-### Use emoji in topic and specs (🥼)
+### Utilizar emojis en el tema y las especificaciones (🥼)
 
-We are experimenting with a feature that allows Copilot Workspace to use emoji in the topic and specifications. Enable this using the "Use emoji in topic and specs" feature in Copilot Workspace.
+Estamos experimentando con una función que permite que Copilot Workspace utilice emojis en el tema y las especificaciones. Habilita esto utilizando la función "Utilizar emojis en el tema y las especificaciones" en Copilot Workspace.
 
-### Utilize linked issues, PRs, and GitHub file links in analysis (🥼)
+### Utilizar problemas vinculados, PR y enlaces de archivos de GitHub en el análisis (🥼)
 
-We are experimenting with a feature that allows Copilot Workspace to utilize linked issues, pull requests, and GitHub file links when analyzing tasks. This allows CW to have more context related to linked issues, PRs, and GitHub file links in analysis. Enable this using the "Utilize linked issues, PRs, and GitHub file links in analysis" feature in Copilot Workspace.
+Estamos experimentando con una función que permite que Copilot Workspace utilice problemas vinculados, solicitudes de extracción y enlaces de archivos de GitHub al analizar tareas. Esto permite que CW tenga más contexto relacionado con problemas vinculados, solicitudes de extracción y enlaces de archivos de GitHub en el análisis. Habilita esto utilizando la función "Utilizar problemas vinculados, PR y enlaces de archivos de GitHub en el análisis" en Copilot Workspace.
 
-### Utilize referenced generic web content in analysis (🥼)
+### Utilizar contenido web genérico referenciado en el análisis (🥼)
 
-We are experimenting with a feature that allows Copilot Workspace to utilize referenced generic web content when analyzing tasks. Currently, the contents of the URL are summarized and given to Copilot Workspace, in order to aid Copilot Workspace more focused on relevant details.
+Estamos experimentando con una función que permite que Copilot Workspace utilice contenido web genérico referenciado al analizar tareas. Actualmente, el contenido de la URL se resume y se proporciona a Copilot Workspace, con el fin de ayudar a Copilot Workspace a centrarse más en los detalles relevantes.
 
-### Use code search during task analysis (🥼)
+### Utilizar búsqueda de código durante el análisis de tareas (🥼)
 
-We are experimenting with a feature that allows Copilot Workspace to utilize code search during task analysis. This helps Copilot Workspace identify relevant files and code snippets more effectively, improving the overall accuracy and relevance of the generated specifications and plans. Enable this using the "Use code search during task analysis" feature in Copilot Workspace. Note that this experiment may result in slower completion times for spec/plan generation, but will cause Copilot Workspace to be more "focused" on your codebase.
+Estamos experimentando con una función que permite que Copilot Workspace utilice la búsqueda de código durante el análisis de tareas. Esto ayuda a Copilot Workspace a identificar archivos y fragmentos de código relevantes de manera más efectiva, mejorando la precisión y relevancia general de las especificaciones y planes generados. Habilita esto utilizando la función "Utilizar búsqueda de código durante el análisis de tareas" en Copilot Workspace. Ten en cuenta que este experimento puede resultar en tiempos de finalización más lentos para la generación de especificaciones y planes, pero hará que Copilot Workspace se centre más en tu base de código.
 
-### Clarify ambiguous specifications (🥼)
+### Aclarar especificaciones ambiguas (🥼)
 
-We are experimenting with a feature that allows Copilot Workspace to detect and warn about ambiguous specifications, in cooperation with the user. Enable this using the "Clarify ambiguous specifications" feature in Copilot Workspace.
+Estamos experimentando con una función que permite que Copilot Workspace detecte y advierta sobre especificaciones ambiguas, en cooperación con el usuario. Habilita esto utilizando la función "Aclarar especificaciones ambiguas" en Copilot Workspace.
 
-### Allow skipping the spec and going straight to plan (🥼)
+### Permitir omitir la especificación y pasar directamente al plan (🥼)
 
-We are experimenting with a feature that allows users to skip the specification step and go straight to the plan. This is especially useful if you have already written a very detailed task description and want Copilot Workspace to go straight to implementing the task. Enable this using the "Allow skipping the spec and going straight to plan" feature in Copilot Workspace.
+Estamos experimentando con una función que permite a los usuarios omitir el paso de especificación y pasar directamente al plan. Esto es especialmente útil si ya has escrito una descripción de tarea muy detallada y quieres que Copilot Workspace vaya directamente a implementar la tarea. Habilita esto utilizando la función "Permitir omitir la especificación y pasar directamente al plan" en Copilot Workspace.

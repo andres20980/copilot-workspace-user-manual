@@ -1,39 +1,19 @@
-# Copilot Workspace for Repository Maintainers
+# Espacio de trabajo de Copilot para Mantenedores de Repositorios
 
-Copilot Workspace can assist you as a repository maintainer in several ways:
+El Espacio de trabajo de Copilot puede ayudarte como mantenedor de repositorio de varias formas:
 
-1. Copilot Workspace can help you explore potential solutions to issues.
-2. Copilot Workspace can help you generate sketches of solutions to issues for potential contributors, lowering the barrier of entry.
-3. Copilot Workspace can help encourage a culture where issue-creators leave additional helpful notes on how to solve issues, for use by both contributors and AI assistants.
+1. El Espacio de trabajo de Copilot puede ayudarte a explorar soluciones potenciales para problemas.
+2. El Espacio de trabajo de Copilot puede ayudarte a generar bocetos de soluciones para problemas, para posibles colaboradores, reduciendo la barrera de entrada.
+3. El Espacio de trabajo de Copilot puede ayudar a fomentar una cultura en la que los creadores de problemas dejen notas adicionales útiles sobre cómo resolver problemas, para uso tanto de colaboradores como de asistentes de IA.
 
-For example, when a new issue is filed in your repository, you can use Copilot Workspace to generate a sketch of a solution to the issue. You can then use the "Share" button to publish this sketch back to the issue thread, with additional comments about whether you think it is useful or not, and where it might need improvement. This can help potential contributors understand the problem better and provide a starting point for their work.
+Por ejemplo, cuando se presenta un nuevo problema en tu repositorio, puedes usar el Espacio de trabajo de Copilot para generar un boceto de una solución para el problema. Luego puedes usar el botón "Compartir" para publicar este boceto en el hilo del problema, con comentarios adicionales sobre si crees que es útil o no, y dónde podría necesitar mejoras. Esto puede ayudar a los posibles colaboradores a comprender mejor el problema y proporcionar un punto de partida para su trabajo.
 
-Similarly, when a new issue is filed, you can ask the contributor to create a Copilot Workspace session for the issue. This may help the contributor understand the problem better and provide a starting point for their work. You can also include this guidance in the issue template for your repository, assuming your users have access to Copilot Workspace. You can also ask contributors to leave additional notes in the Copilot Workspace session, which can help future contributors and AI assistants understand the problem better.
+De manera similar, cuando se presenta un nuevo problema, puedes pedir al colaborador que cree una sesión en el Espacio de trabajo de Copilot para el problema. Esto puede ayudar al colaborador a comprender mejor el problema y proporcionar un punto de partida para su trabajo. También puedes incluir esta guía en la plantilla de problemas de tu repositorio, suponiendo que tus usuarios tengan acceso al Espacio de trabajo de Copilot. También puedes pedir a los colaboradores que dejen notas adicionales en la sesión del Espacio de trabajo de Copilot, lo cual puede ayudar a futuros colaboradores y asistentes de IA a comprender mejor el problema.
 
-## Restricting the use of Copilot Workspace in your repository
+## Restringir el uso del Espacio de trabajo de Copilot en tu repositorio
 
-It is possible for undisciplined contributors to over-use AI-assisted code generation. Because of this, we give repository maintainers the option of disabling the direct use of Copilot Workspaces for creating pull requests and/or issue comments in their repositories.
+Es posible que los colaboradores indisciplinados utilicen en exceso la generación de código asistida por IA. Debido a esto, ofrecemos a los mantenedores de repositorios la opción de deshabilitar el uso directo del Espacio de trabajo de Copilot para crear solicitudes de extracción y/o comentarios de problemas en sus repositorios.
 
-To disable the direct creation of pull requests using Copilot Workspace, create a file `.github/copilot-workspace/policy.json` in the default branch of the repository containing the following content:
-
-```json
-{
-  "allowPullRequests": false
-}
-```
-
-To disable the use of Copilot Workspace to directly generate issue comments that contain links to Copilot Workspace sessions, add the following content to the `policy.json` file:
+Para deshabilitar la creación directa de solicitudes de extracción utilizando el Espacio de trabajo de Copilot, crea un archivo `.github/copilot-workspace/policy.json` en la rama predeterminada del repositorio que contenga el siguiente contenido:
 
 ```json
-{
-  "allowComments": false
-}
-```
-
-Users of Copilot Workspace will still be able to:
-
-- create sharing links to Copilot Workspace sessions and paste them into issue comments
-- push to new branches in your repository (if they have write access)
-- push to new branches in forks of your repository
-- manually create pull requests from branches
-- use Copilot Workspace to generate code snippets and files for their own use in their own pull requests and issue comments to your repository

@@ -1,28 +1,28 @@
-# 📖 Copilot Workspace User Manual
+# 📖 Manual de usuario de Copilot Workspace
 
-Welcome! 👋 This is the user manual for [Copilot Workspace](https://copilot-workspace.githubnext.com), an experiment by [GitHub Next](https://githubnext.com). Copilot Workspace is an AI-native dev environment that allows you to collaborate with Copilot on repo-wide coding tasks, using natural language and integrated cloud compute. You can learn more about what Copilot Workspace is from its [project page](https://githubnext.com/projects/copilot-workspace/).
+¡Bienvenido! 👋 Este es el manual de usuario de [Copilot Workspace](https://copilot-workspace.githubnext.com), un experimento de [GitHub Next](https://githubnext.com). Copilot Workspace es un entorno de desarrollo nativo de IA que te permite colaborar con Copilot en tareas de codificación en todo el repositorio, utilizando lenguaje natural y cómputo en la nube integrado. Puedes obtener más información sobre qué es Copilot Workspace en su [página del proyecto](https://githubnext.com/projects/copilot-workspace/).
 
-This manual will help you understand how to use Copilot Workspace most effectively, and share tips & tricks that we've learned while using Copilot Workspace to build Copilot Workspace. It also documents some known issues (it's an experiment after all!), as well the technical roadmap and origins of the project. 
+Este manual te ayudará a comprender cómo utilizar Copilot Workspace de la manera más efectiva, y compartir consejos y trucos que hemos aprendido mientras utilizamos Copilot Workspace para construir Copilot Workspace. También documenta algunos problemas conocidos (¡después de todo, es un experimento!), así como la hoja de ruta técnica y los orígenes del proyecto.
 
-## Table of Contents
+## Tabla de contenidos
 
-* [Overview](overview.md)
-* [Getting Started](getting-started.md)
-* [Tips and Tricks](tips-and-tricks.md)
-* [Terminal/Codespaces Guide](codespaces-guide.md)
-* [Troubleshooting](troubleshooting.md)
-* Going Further
-  - [Creating Repositories](creating-repos.md)
+* [Descripción General](overview.md)
+* [Primeros Pasos](getting-started.md)
+* [Consejos y Trucos](tips-and-tricks.md)
+* [Terminal/Guía de Codespaces](codespaces-guide.md)
+* [Solución de Problemas](troubleshooting.md)
+* Ir más allá
+  - [Creación de Repositorios](creating-repos.md)
   - [Tareas Ad-hoc](adhoc-tasks.md)
-  - [Controls for Repository Maintainers](repo-maintainers.md)
-  - [Experiments, Roadmap and Known Issues](known-issues.md)
-  - [Responsible AI FAQ](responsible-ai-faq.md)
-  - [Origins](origins.md)
-  - [Settings](settings.md)
-* [Change Notes](changes.md)
+  - [Controles para Mantenedores de Repositorios](repo-maintainers.md)
+  - [Experimentos, Hoja de Ruta y Problemas Conocidos](known-issues.md)
+  - [Preguntas Frecuentes sobre IA Responsable](responsible-ai-faq.md)
+  - [Orígenes](origins.md)
+  - [Configuraciones](settings.md)
+* [Notas de Cambios](changes.md)
 
-## Feedback
+## Retroalimentación
 
-To give general feedback, please join the [GitHub Next Discord](https://discord.gg/FeGshJZ2yy) and post in the [#copilot-workspace](https://discord.com/channels/735557230698692749/1237161687233200279) forum channel.  Please provide a share link to the workspace and a description of the issue you're facing so that we can help you more effectively.
+Para dar comentarios generales, por favor únete al [Discord de GitHub Next](https://discord.gg/FeGshJZ2yy) y publica en el canal [#copilot-workspace](https://discord.com/channels/735557230698692749/1237161687233200279) del foro. Por favor, proporciona un enlace compartido al espacio de trabajo y una descripción del problema que estás enfrentando para que podamos ayudarte de manera más efectiva.
 
-To report harmful content, please email copilot-safety@github.com with a description of the issue and a share link to the workspace.
+Para reportar contenido perjudicial, por favor envía un correo electrónico a copilot-safety@github.com con una descripción del problema y un enlace compartido al espacio de trabajo.
