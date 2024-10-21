@@ -13,7 +13,7 @@ This manual will help you understand how to use Copilot Workspace most effective
 * [Troubleshooting](troubleshooting.md)
 * Going Further
   - [Creating Repositories](creating-repos.md)
-  - [Ad-hoc Tasks](adhoc-tasks.md)
+  - [Tareas Ad-hoc](adhoc-tasks.md)
   - [Controls for Repository Maintainers](repo-maintainers.md)
   - [Experiments, Roadmap and Known Issues](known-issues.md)
   - [Responsible AI FAQ](responsible-ai-faq.md)

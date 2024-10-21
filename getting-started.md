@@ -29,4 +29,4 @@ Welcome to the technical preview for Copilot Workspace! 👋 In order to help yo
    the Codespace are synced back to the workspace. This allows you to use VS Code/Codespaces as a companion experience for 
    making larger edits, debugging, etc.
 
-1. __Learn about ad-hoc tasks__ by visiting the [Ad-hoc Tasks](adhoc-tasks.md) page. Ad-hoc tasks are tasks that you define yourself, without the context of an issue or pull request. You can start an ad-hoc task from the Copilot Workspace dashboard, or from the repository page on GitHub.com.
+1. __Learn about ad-hoc tasks__ by visiting the [Tareas Ad-hoc](adhoc-tasks.md) page. Ad-hoc tasks are tasks that you define yourself, without the context of an issue or pull request. Puedes iniciar una tarea ad-hoc desde el panel de Copilot Workspace o desde la página del repositorio en GitHub.com.
