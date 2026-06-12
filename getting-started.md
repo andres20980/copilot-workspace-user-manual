@@ -1,21 +1,34 @@
 # Primeros Pasos con Copilot Workspace
 
-¡Bienvenido a la vista previa técnica de Copilot Workspace! 👋 Para ayudarte a comenzar, aquí tienes algunas cosas que puedes probar:
+Welcome to the technical preview for Copilot Workspace (CW)! 👋 CW is a "task-centric" dev environment, which allows you to define a task for a repo (using natural language), and then work on it with AI. And to get started, you can define or begin a task using one of the following entrypoints:
 
-1. __Abrir un problema en un repositorio de GitHub y hacer clic en el botón "Abrir en Workspace"__. Esto iniciará una nueva sesión de Copilot Workspace, preconfigurada con el problema como tarea, y te permitirá iterar en la especificación/plan/implementación para ello.
-
-   <img src="images/general/open-in-workspace.png" width=800 alt="Abrir un problema en Copilot Workspace">
-
-2. __Abrir la terminal integrada__ para construir/probar/ejecutar tus cambios. Puedes hacer esto haciendo clic en el icono de la terminal en la barra de encabezado, o haciendo clic en el botón "Abrir terminal" en el panel de "Implementación" (después de haber comenzado a implementar una tarea).
-
-3. __Compartir una instantánea de sesión con alguien__ haciendo clic en el botón de compartir en la sección superior derecha de la barra de encabezado, y enviándoles la URL. Ten en cuenta que cualquier persona con acceso al repositorio puede ver una versión de solo lectura de la instantánea. Pero si envías un enlace a otra persona en la vista previa, podrán bifurcar tu sesión para explorarla más a fondo.
-
-4. __Instalar la aplicación móvil de GitHub__ en tu teléfono y abrir un problema desde allí haciendo clic en el menú "..." y seleccionando "Abrir en Workspace". Ten en cuenta que el cliente web móvil de Copilot Workspace está optimizado para su uso en dispositivos móviles. Y dado que tus sesiones/ediciones se guardan automáticamente, puedes comenzar una tarea en tu teléfono y continuarla en tu escritorio.
-
-5. Visita el [tablero de Copilot Workspace](https://copilot-workspace.githubnext.com) y __comienza una nueva sesión__ haciendo clic en el botón "Nueva sesión". Esto te permitirá buscar un repositorio y luego definir una tarea ad-hoc para él. Es efectivamente como un problema en borrador. Y si seleccionas un [repositorio de plantilla](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository), puedes definir los requisitos de un nuevo repositorio que crees a partir de él.
-
-   <img src="images/general/dashboard.png" width=800 alt="Abrir un problema en Copilot Workspace">
-
-6. __Abrir una sesión de workspace en un Codespace__, haciendo clic en el botón "Abrir en Codespace" en la barra de encabezado o en el panel de "Implementación". Ten en cuenta que tus ediciones de workspace se sincronizarán con el Codespace, y también, cualquier edición que hagas en el Codespace se sincronizará de vuelta al workspace. Esto te permite usar VS Code/Codespaces como una experiencia complementaria para realizar ediciones más grandes, depurar, etc.
-
-7. __Aprender sobre tareas ad-hoc__ visitando la página [Tareas Ad-hoc](adhoc-tasks.md). Las tareas ad-hoc son tareas que defines tú mismo, sin el contexto de un problema o solicitud de extracción. Puedes iniciar una tarea ad-hoc desde el panel de Copilot Workspace o desde la página del repositorio en GitHub.com.
+<table>
+   <tr>
+      <th width="300px">Entrypoint</th>
+      <th width="600px">Screenshot</th>
+   </tr>
+   <tr>
+      <td>
+         <ins>GitHub Issue</ins><br /><br />If you've already got a GitHub issue which describes a task you'd like to perform, then you can simply open the issue and click the "Open in Workspace" button on the right side panel (underneath the "Development" section).<br /><br />This will open the issue within Copilot Workspace, and begin analyzing how to solve it.
+      </td>
+      <td>
+         <img src="https://github.com/user-attachments/assets/217ab007-2847-4696-9181-d9220bafcf1a" />
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <ins>Ad-hoc task (CW dashboard)</ins><br /><br />If you open the <a href="https://copilot-workspace.githubnext.com">Copilot Workspace dashboard</a>, you can click the "Choose a repository" option underneath the "Start a new session" section. This will let you search for the repository you want to work on, and after selecting it, will allow you to define a new task from scratch (kind of like a draft issue).<br /><br />And after you've performed a task against a repository, it will appear in the session list under the "Start a new session" section on the dashboard. That way, you can easily start new tasks against projects you're actively working on.
+      </td>
+      <td>
+         <img src="https://github.com/user-attachments/assets/df7f02c0-dd00-463e-93d8-8cca9ae80911" />
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <ins>Ad-hoc task (repo page)</ins><br /><br />As an alternative to the previous entrypoint, you can also navigate to the repository page for the project you'd like to work on, click the green "Code" button, and enter in a new task from the "Copilot" tab. Once you submit the task, it will take you into Copilot Workspace and begin analyzing how to solve it.
+      </td>
+      <td>
+         <img src="https://github.com/user-attachments/assets/805d33b3-5a60-4841-b9b1-0b10fe781259" />
+      </td>
+   </tr>
+</table>

@@ -4,7 +4,16 @@
 
 ¡Bienvenido a la guía de solución de problemas de Copilot Workspace! En esta sección, te proporcionaremos consejos útiles y soluciones a problemas comunes que puedes encontrar al trabajar con organizaciones y repositorios privados en Copilot Workspace. Nuestro objetivo es asegurarnos de que tengas una experiencia fluida y productiva. ¡Vamos a sumergirnos!
 
-### Solución de Problemas con Organizaciones
+### Troubleshooting access
+
+If you are seeing an "Access Denied" error when trying Copilot Workspace for the first time, here are a few steps that may help:
+
+- Make sure you have an active, paid copilot license. Trial licenses only allow access once the subscription is upgraded to a paid plan.
+- Ensure there are no [trade restrictions](https://docs.github.com/en/site-policy/other-site-policies/github-and-trade-controls) on your account.
+- Verify that any organization with Copilot enabled has both the **Copilot Preview Features** setting and the **Copilot Extensions setting** turned ON. If necessary, reach out to your organization’s administrator for assistance. For more details on configuring organization settings for Copilot, please refer to the [documentation](https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/managing-policies-for-copilot-in-your-organization).
+- For Enterprise users, enable the Copilot Workspace policy through your enterprise account (note this means accepting the [GitHub Next Terms and Conditions](https://github.com/githubnext/githubnext/blob/main/TERMS_AND_CONDITIONS.md))
+
+### Troubleshooting Organizations
 
 Cuando trabajas con organizaciones en Copilot Workspace, es posible que encuentres algunos problemas comunes. Aquí tienes algunos consejos de solución de problemas para ayudarte a resolverlos:
 
@@ -12,10 +21,16 @@ Cuando trabajas con organizaciones en Copilot Workspace, es posible que encuentr
 
 - **Aunque parezca que tienes las credenciales de autorización correctas, la organización `github` ha habilitado restricciones de acceso de aplicaciones OAuth, lo que significa que el acceso a datos de terceros está limitado**. Esto se debe a que una organización restringe las aplicaciones OAuth. Algunos intentos de autorización para organizaciones pueden fallar si la organización no permite aplicaciones OAuth en absoluto. Esto puede afectar incluso el acceso a repositorios públicos en organizaciones que niegan el acceso a aplicaciones OAuth.
 
-- **Recurso protegido por la aplicación SAML de la organización. Debes otorgar acceso a tu token OAuth a esta organización**. Es posible que estés iniciando sesión en una organización con control SAML, por ejemplo, Microsoft. Deberías:
-  1. Cerrar sesión en Copilot Workspace.
-  2. Pasar por la autenticación SAML en el navegador al mirar, por ejemplo, un repositorio de la organización.
-  3. Luego iniciar sesión nuevamente en Copilot Workspace.
+- **Resource protected by organization SAML enforcement. You must grant your OAuth token access to this organization**.You may be logging in to an organization with SAML control, e.g. Microsoft. They should
+  1. Log out of Copilot Workspace.
+  2. Go through SAML auth in the browser by looking at, say, a repository of the organization
+  3. Then log back into Copilot Workspace.
+- **Other known limitations to working within organizations:**
+  1. The enterprise (or org) must opt-in to Copilot feature previews. [Learn how to enable feature previews in GitHub.com](https://docs.github.com/en/get-started/using-github/exploring-early-access-releases-with-feature-preview).
+  2. The enterprise (or org) has set the Copilot Extension policy to Enabled. This can be done under your org / enterprise settings under Copilot > Copilot Policies.
+    **Note:** Due to limitations with Copilot Licensing, all organizations of which you are a member must enable the Copilot Extension policy and opt-in for Copilot feature previews. If any organization of which you are a member disables these settings, you will not be able to access Copilot Workspace.
+  4. Developers within the enterprise (or org) must have paid Copilot licenses.
+
 
 ### Solución de Problemas con Repositorios Privados
 

@@ -1,3 +1,133 @@
+## 📅 6 December 2024
+
+As you may have seen in Discord a few weeks ago, [Copilot Workspace is graduating](https://discord.com/channels/735557230698692749/1309719558449397780/1309719558449397780)! It is a very exciting time, and also a time of change. So before getting into the product changes from this week, we want to highlight a few logistical changes, because everyone loves logistics :muscle:
+
+**Changelog location:** Starting next week we will post changelogs to the main [GitHub changelog](https://github.blog/changelog) rather than this repository. This will be the last changelog posted in this repository, so make sure to follow the [GitHub changelog](https://github.blog/changelog) to stay up to date with the latest and greatest.
+
+**How to provide feedback:** We are also transitioning from the current Discord to a [GitHub Discussion](https://gh.io/workspace-feedback) as the primary place for feedback and discussions around Copilot Workspace. We will still be available in Discord, but posting in the [discussion](https://gh.io/workspace-feedback) will ensure we see your feedback sooner.
+
+Okay, now onto the product updates for this week! :tada:
+
+- [Image Preview Support](#image-preview-support)
+- [Simplifying the Experience](#simplifying-the-experience)
+    - [Reducing Action Button Clicks](#reducing-action-button-clicks)
+    - [Consolidating the Plan Action Buttons](#consolidating-the-plan-action-buttons)
+- [VS Code Extension Improvements](#vs-code-extension-updates)
+
+### Image Preview Support
+
+Building on recent improvements to file and image support, you can now preview images directly in the Workspace editor. Selecting an image from the file tree will now display a full preview of the image, letting you open a preview tab directly within the editor.
+
+<img src="https://github.com/user-attachments/assets/939410dd-2b3a-488e-8d0d-558e9d33ae29" width="900px" >
+
+### Simplifying the Experience
+
+Since our last changes dropped we have invested time into streamlining the Workspace experience, saving you clicks, headaches, and frustration.
+
+#### Reducing Action Button Clicks
+
+We updated the primary action button such that secondary actions available in the dropdown no longer require a second click of the primary button - when you select an action it will immediately take effect.
+
+<img src="https://github.com/user-attachments/assets/95228cfd-3031-49b8-8e0f-d47b5c98d4ae" width="400" >
+
+#### Consolidating the Plan Action Buttons
+
+We have also consolidated plan action buttons like Regenerate and Add File to a kebab menu.
+
+**Before:**  
+<img src="https://github.com/user-attachments/assets/d049b613-b48a-4494-80eb-a4a92f1c00dd" width="400" >
+
+**After:**  
+<img src="https://github.com/user-attachments/assets/2f5a89f6-00c7-42cc-81aa-381f928cb34c" width="400" >
+
+### VS Code Extension Updates
+
+- **Enhanced Session List:** Sessions now appear earlier in their lifecycle in the session list, supporting the new brainstorming feature in VS Code.
+- **Stale View Fix:** Resolved an issue where stale view states were retained in certain views.
+- **Push to Branch / PR Creation Fix:** Fixed failures when merging into an existing branch with updates to the same files.
+- **Binary Detection Fix:** Addressed a false positive issue where folders were incorrectly flagged as binary after session syncing stopped.
+- **Error Message Visibility:** Resolved cases where certain error messages did not display.
+
+## 📅 22 November 2024
+
+Coming off the back of [GitHub Universe](https://githubuniverse.com/), we have been making a ton of behind the scenes change, to improve stability, performance, and setting ourselves up for the next stage of product growth. With that said we have a few updates to share with you! 
+
+- [File Attachments](#file-attachments)
+- [Sortable Tabs](#sortable-tabs)
+- [UI Polish](#ui-polish)
+
+VS Code Extension Updates:
+
+- [Brainstorming](#brainstorming)
+- [Branch and PR creation](#branch-and-pr-creation)
+
+### File Attachments
+
+Continuing on from the image support we added previously, today we are adding support to attach image and text files from the local machine to a Workspace session. Once attached, file attachments work similar to URL attachments in the sense that they get taken into account as context. 
+
+<img src="https://github.com/user-attachments/assets/89b411f6-6e63-4870-88e4-6efcae3a20ea" width="450px" />
+
+> Note: If you want to give this feature a try, you need to enable the `Allow file(s) to be attached as additional context` setting in the `Experiments` dialog (underneath the avatar menu).
+
+### Sortable Tabs
+
+You can now customize your Workspace experience by sorting and reordering tabs using drag and drop. 
+
+<img src="https://github.com/user-attachments/assets/2129f3a6-0434-4f24-8e07-7857c8809af4" width="600px" />
+
+### UI Polish
+
+Fixing a bunch of small issues that we have noticed and other reported by users to make the experience smoother/more polished. 
+
+### VS Code Extension Updates
+
+A number of updates this week to the VS Code extension to make it easier to use and more powerful.
+
+#### Brainstorming
+Initial support for brainstorming is now available in VS Code!  Open up your session of choice, and click on the light bulb or a Ideas from brainstorming in Task view to get started. To answer a new question, click question mark in the Task view, or a Suggested questions, or the Answer button in the Brainstorming panel. Once in the panel, attach ideas or answers and the How should I solve this issue? question will get automatically refreshed with the latest info. Generate or update your plan from there and continue on as always!
+
+<img src="https://github.com/user-attachments/assets/bf62fc9b-a77d-4a42-b286-d00a017804ce" width="800px" />
+
+#### Branch and PR creation
+When session syncing is enabled, your changes are automatically synced to the web. But it can be useful to push your changes to a local and/or remote branch, or even create a PR - and you can now do this from VS Code! Click on the push or PR icon in the Plan view and select your options to get started.
+
+<img src="https://github.com/user-attachments/assets/e802962a-97af-479f-a26c-bd7e2c9a8656" width="500px" />
+
+## 📅 25 October 2024
+
+As the team prepares for [GitHub Universe](https://githubuniverse.com/) next week, we were primarily focused on stabilization, bug fixing, and welcoming new preview users (as we continue to ramp up the waitlist!). That said, we also managed to slip in a few enhancements as well 😄
+
+- [AI vision](#ai-vision)
+- [Auto-installed extension](#auto-installed-extension)
+- [Command status](#command-status)
+
+### AI vision
+
+If you open an issue in CW, and that issue includes images in it's description, then those images will now be included in the context of the task. This is a pretty significant capability, since it unlocks new ways of defining your intent, such as using...
+
+1. **Architecture/class diagrams**, that outline the structure of code you want to generate ([example](https://copilot-workspace.githubnext.com/githubnext/workspace-blank?shareId=25cc2d17-3d00-4f6c-ad5b-ccf3e53a992c))
+2. **App screenshots**, which visually highlight a part of the UI you want to change
+3. **UI mock-ups**, which describe the layout/behavior of some client code you want to write
+4. **Photographs**, which capture hand-written notes or drawings from a meeting
+
+<img src="https://github.com/user-attachments/assets/2020b755-b2e3-4639-9871-973cad184b64" width="900px" /><br />
+
+When combined with [custom instructions](#custom-instructions) and [web URLs](#external-context), AI vision expands CW's support for managing task context, and defining your tasks in whichever way is most natural. And we're excited to hear how folks make use of it!
+
+> Note: If you want to give this feature a try, you need to enable the `Use summaries of images in the context` setting in the `Experiments` dialog (underneath the avatar menu).
+
+### Auto-installed extension
+
+When you click the `Open in Codespace` button in a session, the [Copilot Workspace](https://gh.io/cw-vscode) extension for VS Code is now automatically installed within the Codespace. Why is this cool? Because that allows you to transition to the editor, while still being able to view the details of the task and plan. Additionally, it allows you to continue performing NL-based revision, in addition to any many edits.
+
+<img src="https://github.com/user-attachments/assets/8bb283d3-5a69-4dfa-a75c-22dc23e47daa" />
+
+### Command status
+
+The build/test/run button in the `Commands` tab now displays the status of the current/last run command. That way if you're actively using the `Terminal` tab, you can still see that a build (or test/run) is in-progress. Or that the build you were running in parallel, just succeeded 👍
+
+<img src="https://github.com/user-attachments/assets/f3c70fcb-c879-423e-bcaf-c7902723f11a" width="400px" />
+
 ## 📅 18 October 2024
 
 - [Error repair](#error-repair)
@@ -590,41 +720,49 @@ By default, whitespace changes are now visible within the file diff editors. Thi
 
 ## 📅 9 August 2024
 
-### Features / Enhancements
+### External context
 
-* **External context** - When defining a task/issue, you can now include links to external references, and Copilot Workspace will use them as additional context when generating the spec, plan, and code. This makes it a _lot_ easier to express your intent, without having to copy & paste and/or summarize existing content (which can be non-trivial!). In particular, CW supports referencing the following types of assets:
+When defining a task/issue, you can now include links to external references, and Copilot Workspace will use them as additional context when generating the spec, plan, and code. This makes it a _lot_ easier to express your intent, without having to copy & paste and/or summarize existing content (which can be non-trivial!). In particular, CW supports referencing the following types of assets:
 
    1. *Issues / Pull Requests* - If you reference an issue/PR by number (e.g. `#43`) or URL, then CW will take into account it's description and comments. Additionally, if you link to a specific issue/PR comment, then CW will focus it's attention on just that one. This allows you to use an existing discussion/feedback as context, or work on "umbrella issues" that aggregate a set of sub-tasks together. 
  
    1. *Repository files* - If you reference the URL of a file in a GitHub repository (that you have access to), then CW will include that in its set of prioritized references. Additionally, you can include a link to a specific line ([example](https://github.com/lostintangent/codeswing/blob/b40dbeb3dbf5f133121605c751e1fa7c7a6f67ec/src/extension.ts#L16)) or range of lines in a file ([example](https://github.com/lostintangent/codeswing/blob/b40dbeb3dbf5f133121605c751e1fa7c7a6f67ec/src/preview/layoutManager.ts#L53-L62)), in order to focus CW on that exact code. This allows you to use existing code as a source of inspiration (e.g. "Implement an auth provider just like the one in <URL>"), and help steer Copilot in a more precise direction.
  
    1. *Arbitrary web URLs* - If you reference a public web URL, then CW will fetch and use a summary of its content. Additionally, if you link to a specific fragment of a page (e.g. `#link-to-a-specific-heading`), then CW will extract and focus on just that section. This allows you to reference documentation/blog posts/tweets/etc. that can provide more recent and/or specific instructions of what you're trying to accomplish 💪
- 
-    > Note: This capability isn't enabled by default, and so if you'd like to give it a try, click the `Experimentos` link in your avatar menu, and check either `Utilize linked issues, PR, and GitHub file links in analysis` and/or `Utilize referenced generic web content in analysis`.
 
-* **NL revision** - After you implement a plan, Copilot Workspace now displays a natural language revision bar at the bottom of the `Files changed` section. This allows you to update the plan in complex and arbitrary ways, while remaining focused on reviewing the changes.
+### NL revision
 
-    <img src="https://github.com/user-attachments/assets/1f20f837-548f-4a33-9ec5-e07002c67f65" width="400px" />
+After you implement a plan, Copilot Workspace now displays a natural language revision bar at the bottom of the `Files changed` section. This allows you to update the plan in complex and arbitrary ways, while remaining focused on reviewing the changes.
 
-    Additionally, if you'd like to revise a specific file, you can click the bullseye icon in the file's header, which will put the NL revision bar into "scoped file" mode.
+<img src="https://github.com/user-attachments/assets/1f20f837-548f-4a33-9ec5-e07002c67f65" width="400px" />
 
-    <img src="https://github.com/user-attachments/assets/74e393da-8dcf-4c17-809e-4306a3676178" width="400px" />
+Additionally, if you'd like to revise a specific file, you can click the bullseye icon in the file's header, which will put the NL revision bar into "scoped file" mode.
 
-   Both of these changes are part of a larger theme to elevate/simplify the ability to iterate through natural language. And you can expect to see more improvements in this space in the coming weeks 👍 
+<img src="https://github.com/user-attachments/assets/74e393da-8dcf-4c17-809e-4306a3676178" width="400px" />
+
+Both of these changes are part of a larger theme to elevate/simplify the ability to iterate through natural language. And you can expect to see more improvements in this space in the coming weeks 👍 
   
-* **Terminal repair improvements** - CW's terminal assistance can now perform updates to the plan, when you encounter an error that requires a code change. This can be helpful when a build/test/lint action fails, and you want Copilot to suggest a fix. While this capability is still early (and evolving!), we're excited to make steady progress towards a better workflow for automatically addressing errors.
+### Terminal repair improvements
 
-* **Exit path improvements** - When you create a PR/branch/repo, CW no longer generates a commit description by default. That way you can decide if you'd like Copilot to write a message for you, or if you'd prefer to craft your own 💙
+CW's terminal assistance can now perform updates to the plan, when you encounter an error that requires a code change. This can be helpful when a build/test/lint action fails, and you want Copilot to suggest a fix. While this capability is still early (and evolving!), we're excited to make steady progress towards a better workflow for automatically addressing errors.
 
-  Additionally, when you create a PR for a session that's associated with an issue, the PR dialog now includes a checkbox that allows you to indicate whether the code changes fix the issue or not. When checked, CW will insert a `Fixes #<number` into the issue description. Otherwise, it will insert a `Related to #<number>` (which is what it did previously).
+### Exit path improvements
 
-  <img src="https://github.com/user-attachments/assets/a5b9c1e6-6f32-4b87-8de0-16336030f68f" width="400px" />
+When you create a PR/branch/repo, CW no longer generates a commit description by default. That way you can decide if you'd like Copilot to write a message for you, or if you'd prefer to craft your own 💙
 
-* **SVG preview** - When you implement or open a `*.svg` file, you can now preview a rendered version of its contents, by clicking the eyeball icon in its header. We previously introduced preview support for Markdown, and plan to continue adding support for other file formats in the coming weeks (HTML? 🤔)
+Additionally, when you create a PR for a session that's associated with an issue, the PR dialog now includes a checkbox that allows you to indicate whether the code changes fix the issue or not. When checked, CW will insert a `Fixes #<number` into the issue description. Otherwise, it will insert a `Related to #<number>` (which is what it did previously).
 
-    <img src="https://github.com/user-attachments/assets/d8229ba0-c373-4ff6-875a-677b0b5414d1" width="500px" />
+<img src="https://github.com/user-attachments/assets/a5b9c1e6-6f32-4b87-8de0-16336030f68f" width="400px" />
 
-* **Sessions + Configuraciones** - The user menu (that you get to by clicking your avatar in the upper-right) now includes two new items:
+### SVG preview
+
+When you implement or open a `*.svg` file, you can now preview a rendered version of its contents, by clicking the eyeball icon in its header. We previously introduced preview support for Markdown, and plan to continue adding support for other file formats in the coming weeks (HTML? 🤔)
+
+<img src="https://github.com/user-attachments/assets/d8229ba0-c373-4ff6-875a-677b0b5414d1" width="500px" />
+
+### Sessions + Settings
+
+The user menu (that you get to by clicking your avatar in the upper-right) now includes two new items:
 
    * `Your sessions` - This navigates you to the [CW dashboard](https://copilot-workspace.githubnext.com), so you can see your recent/bookmarked/completed sessions. We got feedback that folks weren't discovering the dashboard, and so we wanted to make this a bit more discoverable (since it's super useful!)
 
@@ -636,13 +774,19 @@ By default, whitespace changes are now visible within the file diff editors. Thi
  
      <img src="https://github.com/user-attachments/assets/2a22900a-2950-4311-a072-7c07ce4fbfbc" width="400px" />
 
-* **Renamed files** - Renamed files are now collapsed by default in the `Files changed` section. This makes it easier to focus your attention on new and changed code, while simply seeing the presence of renamed or deleted files. If a file is both renamed + changed, then it won't be collapsed post-implement, so you can properly review its changes.
+### Renamed files
 
-    <img src="https://github.com/user-attachments/assets/fd3cd39d-6466-4185-8693-aad8a4b9c1d1" width="400px" />
+Renamed files are now collapsed by default in the `Files changed` section. This makes it easier to focus your attention on new and changed code, while simply seeing the presence of renamed or deleted files. If a file is both renamed + changed, then it won't be collapsed post-implement, so you can properly review its changes.
 
-* **Dark mode editor** - The code editor is now properly themed for users with a dark mode system setting. The editor's background was previously a medium greyish color, and now it's black 🖤  
+<img src="https://github.com/user-attachments/assets/fd3cd39d-6466-4185-8693-aad8a4b9c1d1" width="400px" />
 
-* **Usage quota increase** - Due to popular demand, we've increased the daily usage quota again. That way, the folks that are using CW for many tasks every day, can keep sending us amazing feedback 🙏
+### Dark mode editor
+
+The code editor is now properly themed for users with a dark mode system setting. The editor's background was previously a medium greyish color, and now it's black 🖤  
+
+### Usage quota increase
+
+Due to popular demand, we've increased the daily usage quota again. That way, the folks that are using CW for many tasks every day, can keep sending us amazing feedback 🙏
 
 ## 📅 2 August 2024
 

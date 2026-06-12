@@ -38,4 +38,8 @@ El código generado por Copilot Workspace debe cumplir con el mismo estándar qu
 
 ## ¿Qué debe hacer un usuario si encuentra contenido ofensivo mientras usa Copilot Workspace?
 
-Por favor, informe cualquier ejemplo de contenido ofensivo a copilot-safety@github.com. Por favor, incluya un enlace compartido para que podamos investigar.
+Please report any examples of offensive content to copilot-safety@github.com.  Please include a share link so that we can investigate. 
+
+## Is it possible to commit all code to the main branch without creating a new branch?
+
+Yes, it is now possible to commit all code to the main branch without creating a new branch. The implementation has been updated to allow direct commits to the main branch. Users can now choose to commit changes directly to the main branch from the Copilot Workspace interface.

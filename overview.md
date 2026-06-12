@@ -36,8 +36,8 @@ En este manual, te guiaremos a través de los conceptos y características de Co
 
 ## Tarea
 
-Todo en Copilot Workspace comienza con una "tarea", que es una descripción en lenguaje natural de la intención. La tarea siempre tiene un contexto: un repositorio de GitHub.
-Para esta vista previa técnica, Copilot Workspace admite cuatro tipos de tareas: resolver problemas, [refinar solicitudes de extracción](pull-request-tasks.md), [crear repositorios a partir de plantillas](creating-repos.md) y [tareas ad hoc](adhoc-tasks.md). Aquí nos enfocamos en resolver problemas, que son el punto de entrada más común.
+Everything in Copilot Workspace begins with a “task”, which is a natural language description of intent. The task always has a context: a GitHub repository.
+For this technical preview, Copilot Workspace supports four types of tasks: solving issues, refining pull requests, [creating repositories from templates](creating-repos.md) and ad-hoc tasks. Here we focus on solving issues, which are the most common entry point.
 
 Una vez inscrito en la vista previa técnica, en cada problema de GitHub encontrarás un nuevo botón "Abrir en Workspace":
 
